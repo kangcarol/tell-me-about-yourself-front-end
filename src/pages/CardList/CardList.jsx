@@ -11,3 +11,5 @@ const CardList = (props) => {
     </main>
   )
 }
+
+export default CardList
