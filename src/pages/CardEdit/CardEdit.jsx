@@ -20,17 +20,6 @@ const CardEdit = (props) => {
   return (
     <main className={styles.container}A>
       <form onSubmit={handleSubmit}>
-        <label htmlFor="text-input">Question</label>
-        <input
-          required
-          type="text"
-          name="text"
-          id="text-input"
-          value={form.text}
-          placeholder="Question"
-          onChange={handleChange}
-        />
-        <label htmlFor="category-input">Category</label>
         <select
           required
           name="category"
@@ -49,6 +38,26 @@ const CardEdit = (props) => {
           <option value="Databases">Databases</option>
           <option value="Other">Other</option>
         </select>
+        <label htmlFor="text-input">Question</label>
+        <input
+          required
+          type="text"
+          name="text"
+          id="text-input"
+          value={form.text}
+          placeholder="Question..."
+          onChange={handleChange}
+        />
+        <input
+          required
+          type="text"
+          name="text"
+          id="text-input"
+          value={form.text}
+          placeholder="Let's give credit where credit is due!"
+          onChange={handleChange}
+        />
+        <label htmlFor="category-input">Category</label>
         <button type="submit">SUBMIT</button>
       </form>
     </main>

@@ -19,16 +19,6 @@ const CardNew = (props) => {
   return (
     <main className={styles.container}A>
       <form onSubmit={handleSubmit}>
-        <label htmlFor="text-input">Question</label>
-        <input
-          required
-          type="text"
-          name="text"
-          id="text-input"
-          value={form.text}
-          placeholder="Question"
-          onChange={handleChange}
-        />
         <label htmlFor="category-input">Category</label>
         <select
           required
@@ -48,6 +38,26 @@ const CardNew = (props) => {
           <option value="Databases">Databases</option>
           <option value="Other">Other</option>
         </select>
+        <label htmlFor="text-input">Question</label>
+        <input
+          required
+          type="text"
+          name="text"
+          id="text-input"
+          value={form.text}
+          placeholder="Question..."
+          onChange={handleChange}
+        />
+        <label htmlFor="text-input">Source</label>
+        <input
+          required
+          type="text"
+          name="text"
+          id="text-input"
+          value={form.text}
+          placeholder="Let's give credit where credit is due!"
+          onChange={handleChange}
+        />
         <button type="submit">SUBMIT</button>
 
       </form>
