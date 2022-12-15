@@ -1,9 +1,9 @@
 .container {
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: flex-start;
-  align-items: flex-end;
-  margin-bottom: 50px;
+  display: grid;
+  grid-column-start: 1;
+  grid-template-rows: repeat(3, 5vmin);
+  grid-template-columns: 35% 65%;
+  grid-gap: 3%;
 }
 
 .label,
@@ -11,6 +11,20 @@
   margin-right: 0.5rem;
 }
 
+input {
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(230, 227, 227);
+  margin: 5% 0;
+}
+
+.label {
+  margin: 5% 0;
+}
+
 .inputContainer {
-  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  /* border: 1px red solid; */
+  margin-bottom: 6rem;
 }
