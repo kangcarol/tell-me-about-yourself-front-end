@@ -48,12 +48,23 @@ const CardEdit = (props) => {
           placeholder="Question..."
           onChange={handleChange}
         />
+        <label htmlFor="text-input">Answer</label>
         <input
           required
           type="text"
-          name="text"
-          id="text-input"
-          value={form.text}
+          name="answer"
+          id="answer-input"
+          value={form.answer}
+          placeholder="Answer..."
+          onChange={handleChange}
+        />
+        <label htmlFor="text-input">Source</label>
+        <input
+          required
+          type="text"
+          name="source"
+          id="source-input"
+          value={form.source}
           placeholder="Let's give credit where credit is due!"
           onChange={handleChange}
         />

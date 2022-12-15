@@ -1,5 +1,5 @@
 import { useState, useEffect} from "react"
-import { useParams, Link } from "react-router-dom"
+import { useParams, Link, Navigate } from "react-router-dom"
 
 // components
 import Loading from "../Loading/Loading"
@@ -31,19 +31,24 @@ const CardDetails = (props) => {
           <h3>{card.category.toUpperCase()}</h3>
           <span>
             <AuthorInfo content={card} />
+          </span>
+        </header>
+        <h1>{card.text}</h1>
+        <details>
+          <summary>Need some help?</summary>
+        </details>
+        <details>
+          <summary>Answer</summary>
+          <p>{card.answer}</p>
+          <a href={card.source} rel="noreferrer" target="_blank">Source</a>
+        </details>
             {card.author._id === props.user.profile && 
               <>
                 <Link to={`/cards/${id}/edit`} state={card}>Edit</Link>
                 <button onClick={() => props.handleDeleteCard(id)}>Delete</button>
               </>
             }
-          </span>
-        </header>
-        <h1>{card.text}</h1>
       </article>
-      <section>
-        <h3>ADVICE</h3>
-      </section>
     </main>
   )
 }

@@ -12,7 +12,7 @@ const Card = ({card}) => {
         
         <Icon category={card.category} />
         <h6>{card.text}</h6>
-        
+        <p>{card.answer}</p>
         <AuthorInfo content={card} />
       </article>
     </Link>
