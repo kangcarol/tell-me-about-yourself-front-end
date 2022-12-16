@@ -106,7 +106,11 @@ const App = () => {
           path="/cards"
           element={
             <ProtectedRoute user={user}>
-              <CardList card={cards}/>
+              <CardList
+              card={cards}
+              favorites={favorites}
+              handleAddFavorites={handleAddFavorites}
+              />
             </ProtectedRoute>
           }
         />
