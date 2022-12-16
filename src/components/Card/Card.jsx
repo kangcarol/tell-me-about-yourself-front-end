@@ -15,9 +15,9 @@ const Card = (props) => {
           
           <h6>{props.card.text}</h6>
 
-          {(location.pathname ==='/birds') || (location.pathname !=='/cards' && props.favorites===false) ?
+          {(location.pathname ==='/cards') || (location.pathname !=='/cards' && props.favorites===false) ?
 
-          <button className="btn btn-secondary" onClick={() => props.handleAddFavorites(props.card)}>Add to Favorites</button>
+          <button className="btn" onClick={() => props.handleAddFavorites(props.card)}>Add to Favorites</button>
           :
           ''
           }
