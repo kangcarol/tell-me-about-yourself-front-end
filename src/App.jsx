@@ -7,7 +7,9 @@ import Signup from './pages/Signup/Signup'
 import Login from './pages/Login/Login'
 import Landing from './pages/Landing/Landing'
 import Profiles from './pages/Profiles/Profiles'
+import ProfileDetails from './pages/ProfileDetails/ProfileDetails'
 import ChangePassword from './pages/ChangePassword/ChangePassword'
+
 import CardList from './pages/CardList/CardList'
 import CardNew from './pages/CardNew/CardNew'
 import CardDetails from './pages/CardDetails/CardDetails'
@@ -20,6 +22,7 @@ import ProtectedRoute from './components/ProtectedRoute/ProtectedRoute'
 // services
 import * as authService from './services/authService'
 import * as cardService from './services/cardService'
+import * as profileService from './services/profileService'
 
 // styles
 import './App.css'
@@ -27,6 +30,7 @@ import './App.css'
 const App = () => {
   const [user, setUser] = useState(authService.getUser())
   const [cards,setCards] = useState([])
+  const [favorites, setFavorites] = useState([])
   const navigate = useNavigate()
 
   const handleLogout = () => {
@@ -37,6 +41,11 @@ const App = () => {
 
   const handleSignupOrLogin = () => {
     setUser(authService.getUser())
+  }
+
+  const handleAddFavorites = (addedCard) => {
+    setFavorites([addedCard, ...favorites])
+    navigate(`/profiles/${user.profile}`)
   }
 
   const handleAddCard = async (cardData) => {
@@ -128,6 +137,18 @@ const App = () => {
           element={
             <ProtectedRoute user={user}>
               <Profiles />
+            </ProtectedRoute>
+          }
+        />
+        <Route
+          path="/profiles/:id"
+          element={
+            <ProtectedRoute user={user}>
+              <ProfileDetails 
+              user={user}
+              favorites={favorites}
+              handleAddFavorites={handleAddFavorites}
+              />
             </ProtectedRoute>
           }
         />

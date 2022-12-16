@@ -17,7 +17,7 @@ const CardNew = (props) => {
   }
 
   return (
-    <main className={styles.container}A>
+    <main className={styles.container}>
       <form onSubmit={handleSubmit}>
         <label htmlFor="category-input">Category</label>
         <select
