@@ -7,15 +7,17 @@ import AuthorInfo from "../AuthorInfo/AuthorInfo"
 
 const Card = ({card}) => {
   return (
-    <Link to={`/cards/${card._id}`}>
-      <article className={styles.container}>
-        
-        <Icon category={card.category} />
-        <h6>{card.text}</h6>
-        <p>{card.answer}</p>
-        <AuthorInfo content={card} />
-      </article>
-    </Link>
+    <>
+      <Icon category={card.category} />
+      <Link to={`/cards/${card._id}`}>
+        <article className={styles.container}>
+          
+          <h6>{card.text}</h6>
+          {/* <p>{card.answer}</p> */}
+          {/* <AuthorInfo content={card} /> */}
+        </article>
+      </Link>
+    </>
   )
 }
 
