@@ -8,15 +8,17 @@ const NavBar = ({ user, handleLogout }) => {
     <ul>
       <li><Link to="/login">LOG IN</Link></li>
       <li><Link to="/signup">SIGN UP</Link></li>
+      <li><Link to="/about">ABOUT</Link></li>
     </ul>
   )
 
   const protectedLinks = (
     <ul>
+      <li><Link to={`/profiles/${user?.profile}`}>Welcome, {user ? user.name.toUpperCase() : 'Friend'}</Link></li>
       <li><Link to="/cards">ALL CARDS</Link></li>
       <li><Link to="/cards/new">NEW CARD</Link></li>
-      <li><Link to="/profiles">GET TO KNOW SOMEONE</Link></li>
-      <li><Link to={`/profiles/${user?.profile}`}>Welcome, {user ? user.name.toUpperCase() : 'Friend'}</Link></li>
+      <li><Link to="/profiles">PROFILES</Link></li>
+      <li><Link to="/about">ABOUT</Link></li>
       <li><Link to="/logout" onClick={handleLogout}>LOG OUT</Link></li>
     </ul>
   )

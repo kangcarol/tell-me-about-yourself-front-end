@@ -1,13 +1,69 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto',
-    'Oxygen','Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 
-    'Helvetica Neue', sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+
+/* * {
+  border: 1px red solid;
+} */
+
+html {
+  box-sizing: border-box
 }
+
+/* The Universal Selector */
+*, /* All elements*/
+*::before, /* All ::before pseudo-elements */
+*::after { /* All ::after pseudo-elements */
+  /* height & width will now include border & padding by default
+     but can be over-ridden as needed */
+  box-sizing: inherit;
+}
+
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+body {
+  margin: 0;
+  background-color: rgb(214, 160, 160);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto',
+  'Oxygen','Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 
+  'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+}
+
+main {
+  border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+
+a {
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+}
+
+a:hover {
+  color: palegreen;
+}
+
+li {
+  list-style: none;
 }

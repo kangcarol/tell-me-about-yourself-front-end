@@ -1,8 +1,9 @@
 nav {
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 1% 2%;
+  padding: .5% 3%;
 }
 
 nav > ul {
