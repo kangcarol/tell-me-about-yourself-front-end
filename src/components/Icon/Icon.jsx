@@ -6,18 +6,19 @@
 import Bookmark from '../../assets/icons/bookmark.svg'
 import BookmarkAdd from '../../assets/icons/bookmark-add.svg'
 import BookmarkDelete from '../../assets/icons/bookmark-delete.svg'
+import Calendar from '../../assets/icons/calendar.svg'
+// import Create from '../../assets/icons/create.svg'
+// import Comments from '../../assets/icons/comments.svg'
 import Behavioral from '../../assets/icons/behavioral.png'
+import CS from '../../assets/icons/cs.svg'
 import Javascript from '../../assets/icons/javascript.svg'
 import React from '../../assets/icons/react.svg'
 import Python from '../../assets/icons/python.svg'
-// import Create from '../../assets/icons/create.svg'
-// import Comments from '../../assets/icons/comments.svg'
-import Calendar from '../../assets/icons/calendar.svg'
 import Frontend from '../../assets/icons/frontend.svg'
 import Backend from '../../assets/icons/backend.svg'
 import Database from '../../assets/icons/database.svg'
 import Style from '../../assets/icons/style.svg'
-import Other from '../../assets/icons/pin.svg'
+import Other from '../../assets/icons/code.svg'
 
 const Icon = ({ category }) => {
   const icons = { 
@@ -29,6 +30,7 @@ const Icon = ({ category }) => {
     BookmarkAdd: BookmarkAdd,
     BookmarkDelete: BookmarkDelete,
     Behavioral: Behavioral,
+    CS: CS,
     Javascript: Javascript,
     Python: Python,
     React: React,

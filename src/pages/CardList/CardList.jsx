@@ -20,7 +20,10 @@ const CardList = (props) => {
         ))}
       </section>
       <section>
-        <h1>COMPUTER SCIENCE</h1>
+        <div>
+          <Icon category={'CS'} />
+          <h1>COMPUTER SCIENCE</h1>
+        </div>
         {props.card.map((card, idx) => (
           (card.category === 'Computer Science') ?
           <Card card={card} handleAddFavorites={props.handleAddFavorites} key={card._id} />
@@ -89,7 +92,10 @@ const CardList = (props) => {
         ))}
       </section>
       <section>
-        <h1>BACK END</h1>
+        <div>
+        <Icon category={'Backend'} />
+          <h1>BACK END</h1>
+        </div>
         {props.card.map((card, idx) => (
           (card.category === 'Backend') ?
           <Card card={card} handleAddFavorites={props.handleAddFavorites} key={card._id} />
