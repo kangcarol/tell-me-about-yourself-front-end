@@ -4,6 +4,8 @@ import styles from './CardNew.module.css'
 const CardNew = (props) => {
   const [form, setForm] = useState({
     text: '',
+    answer: '',
+    source: '',
     category: '',
   })
 

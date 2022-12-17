@@ -10,8 +10,8 @@ const CardList = (props) => {
       <section>
         <div>
           <Link to="/cards/behavioral">
-           <Icon category={'Behavioral'} />
-           <h1>BEHAVIORAL</h1>
+            <Icon category={'Behavioral'} />
+            <h1>BEHAVIORAL</h1>
           </Link>
         </div>
         {/* {props.card.map((card, idx) => (
@@ -23,8 +23,10 @@ const CardList = (props) => {
       </section>
       <section>
         <div>
+        <Link to="/cards/computerscience">
           <Icon category={'CS'} />
           <h1>COMPUTER SCIENCE</h1>
+        </Link>
         </div>
         {/* {props.card.map((card, idx) => (
           (card.category === 'Computer Science') ?
@@ -35,8 +37,10 @@ const CardList = (props) => {
       </section>
       <section>
       <div>
+      <Link to="/cards/javascript">
         <Icon category={'Javascript'} />
         <h1>JAVASCRIPT</h1>
+      </Link>
       </div>
         {/* {props.card.map((card, idx) => (
           (card.category === 'Javascript') ?
@@ -47,8 +51,10 @@ const CardList = (props) => {
       </section>
       <section>
         <div>
+        <Link to="/cards/python">
           <Icon category={'Python'} />
           <h1>PYTHON</h1>
+        </Link>
         </div>
         {/* {props.card.map((card, idx) => (
           (card.category === 'Python') ?
@@ -59,8 +65,10 @@ const CardList = (props) => {
       </section>
       <section>
         <div>
+        <Link to="/cards/frontend">
           <Icon category={'Frontend'} />
           <h1>FRONT END</h1>
+        </Link>
         </div>
         {/* {props.card.map((card, idx) => (
           (card.category === 'Frontend') ?
@@ -71,8 +79,10 @@ const CardList = (props) => {
       </section>
       <section>
         <div>
+        <Link to="/cards/react">
           <Icon category={'React'} />
           <h1>REACT</h1>
+        </Link>
         </div>
         {/* {props.card.map((card, idx) => (
           (card.category === 'React') ?
@@ -83,8 +93,10 @@ const CardList = (props) => {
       </section>
       <section>
         <div>
+        <Link to="/cards/styling">
           <Icon category={'Style'} />
           <h1>STYLING</h1>
+        </Link>
         </div>
         {/* {props.card.map((card, idx) => (
           (card.category === 'Styling') ?
@@ -95,8 +107,10 @@ const CardList = (props) => {
       </section>
       <section>
         <div>
-        <Icon category={'Backend'} />
+        <Link to="/cards/backend">
+          <Icon category={'Backend'} />
           <h1>BACK END</h1>
+        </Link>
         </div>
         {/* {props.card.map((card, idx) => (
           (card.category === 'Backend') ?
@@ -107,8 +121,10 @@ const CardList = (props) => {
       </section>
       <section>
         <div>
+        <Link to="/cards/databases">
           <Icon category={'Database'} />
           <h1>DATABASES</h1>
+        </Link>
         </div>
         {/* {props.card.map((card, idx) => (
           (card.category === 'Databases') ?
@@ -119,8 +135,10 @@ const CardList = (props) => {
       </section>
       <section>
         <div>
+        <Link to="/cards/other">
           <Icon category={'Other'} />
           <h1>OTHER</h1>
+        </Link>
         </div>
         {/* {props.card.map((card, idx) => (
           (card.category === 'Other') ?
