@@ -1,0 +1,10 @@
+.container div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.container div > img {
+  width: 4%;
+  padding-right: 10px;
+}

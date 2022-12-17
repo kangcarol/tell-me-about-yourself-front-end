@@ -36,7 +36,7 @@ const ProfileDetails = (props) => {
             <h1>{profile.name.toUpperCase()}</h1>
         </header>
 
-        <h2>Favorites</h2>
+        <h2>BOOKMARKS</h2>
           {props.favorites.map(card => (
             
             <Card favorites={true} card={card} key={card._id}/>

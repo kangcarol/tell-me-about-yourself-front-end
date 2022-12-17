@@ -1,6 +1,7 @@
 import styles from './CardList.module.css'
 import Card from '../../components/Card/Card'
 import { Link } from 'react-router-dom'
+import Icon from '../../components/Icon/Icon.jsx'
 
 const CardList = (props) => {
   console.log("cardlist props:" , props)
@@ -25,7 +26,10 @@ const CardList = (props) => {
         ))}
       </section>
       <section>
+      <div>
+        <Icon category={'Javascript'} />
         <h1>JAVASCRIPT</h1>
+      </div>
         {props.card.map((card, idx) => (
           (card.category === 'Javascript') ?
           <Card card={card} handleAddFavorites={props.handleAddFavorites} key={card._id} />
@@ -34,7 +38,10 @@ const CardList = (props) => {
         ))}
       </section>
       <section>
-        <h1>PYTHON</h1>
+        <div>
+          <Icon category={'Python'} />
+          <h1>PYTHON</h1>
+        </div>
         {props.card.map((card, idx) => (
           (card.category === 'Python') ?
           <Card card={card} handleAddFavorites={props.handleAddFavorites} key={card._id} />
@@ -52,7 +59,10 @@ const CardList = (props) => {
         ))}
       </section>
       <section>
-        <h1>REACT</h1>
+        <div>
+          <Icon category={'React'} />
+          <h1>REACT</h1>
+        </div>
         {props.card.map((card, idx) => (
           (card.category === 'React') ?
           <Card card={card} handleAddFavorites={props.handleAddFavorites} key={card._id} />
@@ -88,7 +98,10 @@ const CardList = (props) => {
         ))}
       </section>
       <section>
-        <h1>OTHER</h1>
+        <div>
+          <Icon category={'Other'} />
+          <h1>OTHER</h1>
+        </div>
         {props.card.map((card, idx) => (
           (card.category === 'Other') ?
           <Card card={card} handleAddFavorites={props.handleAddFavorites} key={card._id} />

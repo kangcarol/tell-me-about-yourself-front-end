@@ -1,0 +1,22 @@
+/* .icon {
+  width: 4%;
+} */
+
+article {
+  display: flex;
+  flex-direction: row;
+  width: 35%;
+}
+
+.container button {
+  background: none;
+  border: none;
+}
+
+.container > img {
+  width: 50%;
+}
+
+.container h2 {
+  margin: 0;
+}

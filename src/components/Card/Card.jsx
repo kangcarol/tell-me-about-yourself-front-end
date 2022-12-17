@@ -1,26 +1,29 @@
 import { Link, useLocation } from 'react-router-dom'
 import styles from './Card.module.css'
 
-// Components
-import Icon from "../Icon/Icon"
-import AuthorInfo from "../AuthorInfo/AuthorInfo"
+// // Components
+import Icon from "../Icon/Icon.jsx"
+// import AuthorInfo from "../AuthorInfo/AuthorInfo"
 
 const Card = (props) => {
   const location = useLocation()
   return (
     <>
-      <Icon category={props.card.category} />
-      <Link to={`/cards/${props.card._id}`}>
+      {/* <div  className={styles.icon}>
+        <Icon category={props.card.category} />
+        <h2>{props.card.category}</h2>
+      </div> */}
+      <Link to={`/cards/${props.card._id}`} className={styles.container}>
         <article className={styles.container}>
           
-          <h6>{props.card.text}</h6>
-
           {(location.pathname ==='/cards') || (location.pathname !=='/cards' && props.favorites===false) ?
 
-          <button className="btn" onClick={() => props.handleAddFavorites(props.card)}>Add to Favorites</button>
+          <button className="btn" onClick={() => props.handleAddFavorites(props.card)}><Icon category={'Bookmark'} /></button>
           :
           ''
           }
+
+          <h2 className={styles.container}>{props.card.text}</h2>
 
         </article>
       </Link>

@@ -1,3 +1,7 @@
+/* * {
+  border: 1px red solid;
+} */
+
 html {
   box-sizing: border-box
 }
@@ -9,4 +13,22 @@ html {
   /* height & width will now include border & padding by default
      but can be over-ridden as needed */
   box-sizing: inherit;
+}
+
+body {
+  background-color: rgb(214, 160, 160);
+}
+
+a {
+  text-decoration: none;
+  font-weight: bold;
+  color: rgb(225, 29, 94);
+}
+
+a:hover {
+  color: palegreen;
+}
+
+li {
+  list-style: none;
 }
