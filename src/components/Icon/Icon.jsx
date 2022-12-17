@@ -13,6 +13,10 @@ import Python from '../../assets/icons/python.svg'
 // import Create from '../../assets/icons/create.svg'
 // import Comments from '../../assets/icons/comments.svg'
 import Calendar from '../../assets/icons/calendar.svg'
+import Frontend from '../../assets/icons/frontend.svg'
+import Backendend from '../../assets/icons/backendend.svg'
+import Database from '../../assets/icons/database.svg'
+import Style from '../../assets/icons/style.svg'
 import Other from '../../assets/icons/pin.svg'
 
 const Icon = ({ category }) => {
@@ -29,10 +33,12 @@ const Icon = ({ category }) => {
     Python: Python,
     React: React,
     Other: Other,
-    // Movies: Movies,
-    // Sports: Sports,
-    // Create: Create,
+    Style: Style,
+    Frontend: Frontend,
+    Backend: Backend,
+    Database: Database,
     Calendar: Calendar,
+    // Create: Create,
     // Comments: Comments,
     // Television: Televison,
   }

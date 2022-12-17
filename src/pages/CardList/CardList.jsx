@@ -53,9 +53,12 @@ const CardList = (props) => {
         ))}
       </section>
       <section>
-        <h1>FRONT END</h1>
+        <div>
+          <Icon category={'Frontend'} />
+          <h1>FRONT END</h1>
+        </div>
         {props.card.map((card, idx) => (
-          (card.category === 'Front End') ?
+          (card.category === 'Frontend') ?
           <Card card={card} handleAddFavorites={props.handleAddFavorites} key={card._id} />
           :
           ''
@@ -74,7 +77,10 @@ const CardList = (props) => {
         ))}
       </section>
       <section>
-        <h1>STYLING</h1>
+        <div>
+          <Icon category={'Style'} />
+          <h1>STYLING</h1>
+        </div>
         {props.card.map((card, idx) => (
           (card.category === 'Styling') ?
           <Card card={card} handleAddFavorites={props.handleAddFavorites} key={card._id} />
@@ -85,14 +91,17 @@ const CardList = (props) => {
       <section>
         <h1>BACK END</h1>
         {props.card.map((card, idx) => (
-          (card.category === 'Back End') ?
+          (card.category === 'Backend') ?
           <Card card={card} handleAddFavorites={props.handleAddFavorites} key={card._id} />
           :
           ''
         ))}
       </section>
       <section>
-        <h1>DATABASES</h1>
+        <div>
+          <Icon category={'Database'} />
+          <h1>DATABASES</h1>
+        </div>
         {props.card.map((card, idx) => (
           (card.category === 'Databases') ?
           <Card card={card} handleAddFavorites={props.handleAddFavorites} key={card._id} />
