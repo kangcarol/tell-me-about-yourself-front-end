@@ -27,6 +27,7 @@ const CardNew = (props) => {
           value={form.category}
           onChange={handleChange}
         >
+          <option value="">Select a Category</option>
           <option value="Behavioral">Behavioral</option>
           <option value="Computer Science">Computer Science</option>
           <option value="Javascript">Javascript</option>

@@ -12,6 +12,7 @@ import ProfileDetails from './pages/ProfileDetails/ProfileDetails'
 import ChangePassword from './pages/ChangePassword/ChangePassword'
 
 import CardList from './pages/CardList/CardList'
+import CardOfCategory from './pages/CardOfCategory/CardOfCategory'
 import CardNew from './pages/CardNew/CardNew'
 import CardDetails from './pages/CardDetails/CardDetails'
 import CardEdit from './pages/CardEdit/CardEdit'
@@ -115,6 +116,18 @@ const App = () => {
           element={
             <ProtectedRoute user={user}>
               <CardList
+              card={cards}
+              favorites={favorites}
+              handleAddFavorites={handleAddFavorites}
+              />
+            </ProtectedRoute>
+          }
+        />
+        <Route
+          path="/cards/:category"
+          element={
+            <ProtectedRoute user={user}>
+              <CardOfCategory
               card={cards}
               favorites={favorites}
               handleAddFavorites={handleAddFavorites}
