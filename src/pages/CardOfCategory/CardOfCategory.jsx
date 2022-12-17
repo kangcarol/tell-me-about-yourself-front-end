@@ -6,7 +6,6 @@ import Icon from '../../components/Icon/Icon.jsx'
 const CardOfCategory = (props) => {
   console.log("cardlist props:" , props)
   const { category } = useParams()
-  // const categoryName = 'Behavioral'
 
   return (
     <main className={styles.container}>
