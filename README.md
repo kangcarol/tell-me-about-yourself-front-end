@@ -1,70 +1,44 @@
-# Decoupled MERN Stack with JWT Auth Template - Front End
+# Tell Me About Yourself
+<br>
 
-This is the front end of a decoupled MERN Stack app that includes JWT Authentication.
+### TELL ME ABOUT YOURSELF is a flashcard app to help software engineers prep for interviews, both behavioral and technical.
+<br>
 
-When combined with the back end found [here](https://github.com/SEI-Remote/decoupled-mern-jwt-auth-template-back-end), you'll have all you need to build a full stack MERN app!
+## Get Started Here: [Link]()
+<br>
 
-Use this to go build things! 🚀
+## Instructions:
+* Navigate to the app
+* Sign up for an account or login to the app
+* Browse through the questions by category
+* Click on the question to bookmark it to your profile
+* To get to your profile, click on your name on the nav bar
+  
+<br>
+PASTE SCREENSHOTS HERE
+![]()
 
-## To Use This Template
+<br>
 
-**Replace `<name-of-your-app-here>` in the commands below with the name of your app!**
+## Planning Materials:
+[Trello](https://trello.com/b/s1KkWzTR/flashcards)
+<br>
+[ERD and Wireframe](https://www.figma.com/file/Hq4sARXx9CZJm6OLEFKnAx/Tell-Me-About-Yourself?node-id=8%3A108&t=ufHwLOgIO5ngVi1N-1)
 
-```bash
-git clone https://github.com/SEI-Remote/decoupled-mern-jwt-auth-template-front-end <name-of-your-app-here>-front-end
-cd <name-of-your-app-here>-front-end
-code .
-```
+<br>
 
-With the project open in VS Code, open a terminal and run:
+## Technologies used:
+* JavaScript
+* CSS
+* React
+* MongoDB
+* Mongoose
+* Express
+* Node.js
+* Git
 
-```bash
-rm -rf .git
-```
+<br>
 
-Here's what your command line output should like after this step (note that the indicator that we are in a git repository is gone!)
-
-<img src="https://i.imgur.com/L47kNOZ.png" alt="The command line before and after running the rm -rf .git command. Before git:(main) is visible indiating that the directory contains a git repository, after the command it is not.">
-
-Re-initialize a git repository:
-
-```bash
-git init
-```
-
-Create a repo for this project on GitHub and add that remote to your project with:
-
-```bash
-git remote add origin your-repo-URL-here
-```
-
-Run `npm i` to fetch the template's dependencies:
-
-```bash
-npm i
-```
-
-touch a `.env` file:
-
-```bash
-touch .env
-```
-
-Fill it with the following:
-
-```
-REACT_APP_BACK_END_SERVER_URL=http://localhost:3001
-```
-
-> 🚨 DO NOT place secrets in this `.env` file. The contents of this file WILL be exposed to site visitors. We are only using the front-end .env to create variables specific to the environment the application is running in.
-
-Delete this README.md, then make an initial commit:
-
-```bash
-git add .
-git commit -m "initial commit"
-git push origin main
-```
-
-You're done!
-# tell-me-about-yourself-front-end
+## Credits
+* FontAwesome.com
+* Icons8.com
