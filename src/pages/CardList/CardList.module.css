@@ -8,3 +8,9 @@
   width: 4%;
   padding-right: 10px;
 }
+
+.container h1 {
+  color: rgb(225, 29, 94);
+  font-size: 2.5em;
+  /* margin: 10px 0; */
+}

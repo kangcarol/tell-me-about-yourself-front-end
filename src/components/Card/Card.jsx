@@ -1,7 +1,7 @@
 import { Link, useLocation } from 'react-router-dom'
 import styles from './Card.module.css'
 
-// // Components
+// Components
 import Icon from "../Icon/Icon.jsx"
 // import AuthorInfo from "../AuthorInfo/AuthorInfo"
 
@@ -18,12 +18,12 @@ const Card = (props) => {
           
           {(location.pathname ==='/cards') || (location.pathname !=='/cards' && props.favorites===false) ?
 
-          <button className="btn" onClick={() => props.handleAddFavorites(props.card)}><Icon category={'Bookmark'} /></button>
+          <button className="btn" onClick={() => props.handleAddFavorites(props.card)}><Icon category={'BookmarkAdd'} /></button>
           :
-          ''
+          <Icon category={'BookmarkDelete'} />
           }
 
-          <h2 className={styles.container}>{props.card.text}</h2>
+          <h2 className={styles.container}>{props.card.text.toUpperCase()}</h2>
 
         </article>
       </Link>

@@ -150,6 +150,7 @@ const App = () => {
             <ProtectedRoute user={user}>
               <ProfileDetails 
               user={user}
+              card={cards}
               favorites={favorites}
               handleAddFavorites={handleAddFavorites}
               />

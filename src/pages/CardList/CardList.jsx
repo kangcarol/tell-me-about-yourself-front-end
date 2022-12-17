@@ -8,7 +8,10 @@ const CardList = (props) => {
   return (
     <main className={styles.container}>
       <section>
-        <h1>BEHAVIORAL</h1>
+        <div>
+          <Icon category={'Behavioral'} />
+          <h1>BEHAVIORAL</h1>
+        </div>
         {props.card.map((card, idx) => (
           (card.category === 'Behavioral') ?
           <Card card={card} handleAddFavorites={props.handleAddFavorites} key={card._id} />
