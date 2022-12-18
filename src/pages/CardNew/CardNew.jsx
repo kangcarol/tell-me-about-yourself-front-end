@@ -31,7 +31,7 @@ const CardNew = (props) => {
         >
           <option value="">Select a Category</option>
           <option value="Behavioral">Behavioral</option>
-          <option value="CS">Computer Science</option>
+          <option value="Computer Science">Computer Science</option>
           <option value="Javascript">Javascript</option>
           <option value="Python">Python</option>
           <option value="Frontend">Front End</option>

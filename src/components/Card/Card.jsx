@@ -7,24 +7,26 @@ import Icon from "../Icon/Icon.jsx"
 
 const Card = (props) => {
   const location = useLocation()
-  console.log ("propsssss fav", typeof props.favorite)
-  
   return (
     <>
+      {/* <div  className={styles.icon}>
+        <Icon category={props.card.category} />
+        <h2>{props.card.category}</h2>
+      </div> */}
+      <Link to={`/cards/${props.card._id}`} className={styles.container}>
         <article className={styles.container}>
           
-          {(location.pathname ==='/cards/behavioral') || (location.pathname ==='/cards/behavioral' && props.favorites===false) ?
+          {(location.pathname ==='/cards') || (location.pathname !=='/cards' && props.favorites===false) ?
 
-          <button className="btn" onClick={() => props.handleAddFavorites(props.card)}><Icon category={'BookmarkAdd'} />ADD BKMK</button>
+          <button className="btn" onClick={() => props.handleAddFavorites(props.card)}><Icon category={'BookmarkAdd'} /></button>
           :
           <Icon category={'BookmarkDelete'} />
           }
 
-        <Link to={`/cards/${props.card._id}`} className={styles.container}>
           <h2 className={styles.container}>{props.card.text.toUpperCase()}</h2>
-        </Link>
 
         </article>
+      </Link>
     </>
   )
 }

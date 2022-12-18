@@ -1,5 +1,5 @@
 import styles from './DateCard.module.css'
-import Icon from '../../components/Icon/Icon'
+import Icon from '../Icon/Icon'
 
 const DateCard = ({ createdAt }) => {
   const date = new Date(createdAt).toLocaleDateString()

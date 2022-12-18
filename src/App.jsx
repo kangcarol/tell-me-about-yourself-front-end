@@ -12,7 +12,6 @@ import ProfileDetails from './pages/ProfileDetails/ProfileDetails'
 import ChangePassword from './pages/ChangePassword/ChangePassword'
 
 import CardList from './pages/CardList/CardList'
-import CardOfCategory from './pages/CardOfCategory/CardOfCategory'
 import CardNew from './pages/CardNew/CardNew'
 import CardDetails from './pages/CardDetails/CardDetails'
 import CardEdit from './pages/CardEdit/CardEdit'
@@ -32,7 +31,6 @@ import './App.css'
 const App = () => {
   const [user, setUser] = useState(authService.getUser())
   const [cards,setCards] = useState([])
-  const [profile, setProfiles] = useState([])
   const [favorites, setFavorites] = useState([])
   const navigate = useNavigate()
 
@@ -100,22 +98,18 @@ const App = () => {
           path="/"
           element={<Landing user={user} />}
         />
-
         <Route
           path="/about"
           element={<About user={user}/>}
         />
-        
         <Route
           path="/signup"
           element={<Signup handleSignupOrLogin={handleSignupOrLogin} />}
         />
-
         <Route
           path="/login"
           element={<Login handleSignupOrLogin={handleSignupOrLogin} />}
         />
-
         <Route
           path="/cards"
           element={
@@ -129,28 +123,11 @@ const App = () => {
           }
         />
 
-        <Route
-          path="/cards/:category"
-          element={
-            <ProtectedRoute user={user}>
-              <CardOfCategory
-              card={cards}
-              favorites={favorites}
-              handleAddFavorites={handleAddFavorites}
-              />
-            </ProtectedRoute>
-          }
-        />
-
-        <Route
-          exact={true}
-          path="/cards/:id" 
-          element={
+        <Route path="/cards/:id" element={
           <ProtectedRoute user={user}>
             <CardDetails user={user} handleDeleteCard={handleDeleteCard} />
           </ProtectedRoute>
-          }
-        />
+        } />
 
         <Route 
           path="/cards/new"
@@ -161,13 +138,11 @@ const App = () => {
           }
         />
 
-        <Route
-          path="/cards/:id/edit" element={
+        <Route path="/cards/:id/edit" element={
           <ProtectedRoute user={user}>
             <CardEdit handleUpdateCard={handleUpdateCard} />
           </ProtectedRoute>
-          } 
-        />
+        } />
 
         <Route
           path="/profiles"
@@ -177,7 +152,6 @@ const App = () => {
             </ProtectedRoute>
           }
         />
-
         <Route
           path="/profiles/:id"
           element={
@@ -191,7 +165,6 @@ const App = () => {
             </ProtectedRoute>
           }
         />
-
         <Route
           path="/change-password"
           element={
@@ -200,7 +173,6 @@ const App = () => {
             </ProtectedRoute>
           }
         />
-
       </Routes>
     </>
   )

@@ -10,7 +10,7 @@ import Calendar from '../../assets/icons/calendar.svg'
 // import Create from '../../assets/icons/create.svg'
 // import Comments from '../../assets/icons/comments.svg'
 import Behavioral from '../../assets/icons/behavioral.png'
-import ComputerScience from '../../assets/icons/cs.svg'
+import CS from '../../assets/icons/cs.svg'
 import Javascript from '../../assets/icons/javascript.svg'
 import React from '../../assets/icons/react.svg'
 import Python from '../../assets/icons/python.svg'
@@ -29,16 +29,16 @@ const Icon = ({ category }) => {
     Bookmark: Bookmark,
     BookmarkAdd: BookmarkAdd,
     BookmarkDelete: BookmarkDelete,
-    behavioral: Behavioral,
-    'computer-science': ComputerScience,
-    javascript: Javascript,
-    python: Python,
-    react: React,
-    other: Other,
-    styling: Style,
-    frontend: Frontend,
-    backend: Backend,
-    databases: Database,
+    Behavioral: Behavioral,
+    CS: CS,
+    Javascript: Javascript,
+    Python: Python,
+    React: React,
+    Other: Other,
+    Style: Style,
+    Frontend: Frontend,
+    Backend: Backend,
+    Database: Database,
     Calendar: Calendar,
     // Create: Create,
     // Comments: Comments,
