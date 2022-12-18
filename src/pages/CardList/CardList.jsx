@@ -8,9 +8,10 @@ const CardList = (props) => {
   return (
     <main className={styles.container}>
       <section>
-        <div>
+      <details>
+        <div><summary>
           <Icon category={'Behavioral'} />
-          <h1>BEHAVIORAL</h1>
+          <h1>BEHAVIORAL</h1></summary>
         </div>
         {props.card.map((card, idx) => (
           (card.category === 'Behavioral') ?
@@ -18,6 +19,7 @@ const CardList = (props) => {
           :
           ''
         ))}
+        </details>
       </section>
       <section>
         <div>
@@ -32,16 +34,18 @@ const CardList = (props) => {
         ))}
       </section>
       <section>
-      <div>
+      <details>
+      <summary>
         <Icon category={'Javascript'} />
         <h1>JAVASCRIPT</h1>
-      </div>
+      </summary>
         {props.card.map((card, idx) => (
           (card.category === 'Javascript') ?
           <Card card={card} handleAddFavorites={props.handleAddFavorites} key={card._id} />
           :
           ''
         ))}
+        </details>
       </section>
       <section>
         <div>

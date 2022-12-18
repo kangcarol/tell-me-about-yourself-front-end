@@ -35,7 +35,7 @@
 .container > div:first-child {
   display: flex;
   height: 80px;
-  padding-bottom: 10px;
+  padding-bottom: 20px;
 }
 
 .container > div > img {
@@ -44,9 +44,9 @@
   height: 60px;
 }
 
-.container > div >h2 {
-  width: 55%;
-  margin: 0 10px;
+.container > div > h2 {
+  margin: 0 0 0 10px;
+  font-size: 1.35em;
 }
 
 .container > div:last-child {
@@ -54,16 +54,24 @@
   /* flex-direction: column; */
   justify-content: center;
   overflow:scroll;
-  scroll-snap-align: start;
+  scroll-snap-type: y mandatory;
+  /* overflow: hidden; */
+  /* -webkit-line-clamp: 3;
+  text-overflow: ellipsis; */
 }
 
 .container > div > p {
-  width: 100%;
+  /* overflow:scroll; */
+  font-size: 15px;
+  font-weight: 400;
+  margin: 0;
   line-height: 1.25rem;
-  /* display: -webkit-box; */
-  -webkit-line-clamp: 3;
+  display: -webkit-box;
+  -webkit-line-clamp: 12;
+  text-align-last: left;
   text-overflow: ellipsis;
-  /* color: linear-gradient(rgb(57, 56, 56), rgba(92, 90, 90, 0.5)); */
+  -webkit-box-orient: vertical;
+  scroll-snap-align: start;
 }
 
 .container > div > p:hover {
