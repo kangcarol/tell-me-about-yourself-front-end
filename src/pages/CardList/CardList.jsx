@@ -14,7 +14,12 @@ const CardList = (props) => {
             <h1>BEHAVIORAL</h1>
           </Link>
         </div>
-
+        {/* {props.card.map((card, idx) => (
+          (card[0].toUpperCase() + category.slice(1) === category[0].toUpperCase() + category.slice(1)) ?
+          <Card card={card} handleAddFavorites={props.handleAddFavorites} key={card._id} />
+          :
+          ''
+        ))} */}
         <div>
         <Link to="/cards/computer-science">
           <Icon category={'computer-science'} />

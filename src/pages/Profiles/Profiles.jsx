@@ -15,7 +15,7 @@ const Profiles = () => {
 
   return (
     <main className={styles.container}>
-      <h1>Tell Me About Yourself Profiles</h1>
+      <h1>Profiles</h1>
 
       {profiles.length ? 
         <>

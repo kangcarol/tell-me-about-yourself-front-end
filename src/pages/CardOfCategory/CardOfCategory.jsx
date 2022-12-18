@@ -4,7 +4,7 @@ import { useParams, Link } from 'react-router-dom'
 import Icon from '../../components/Icon/Icon.jsx'
 
 const CardOfCategory = (props) => {
-  const { category, id } = useParams()
+  const { category } = useParams()
   console.log("category params" , category[0].toUpperCase() + category.slice(1))
 
   return (
