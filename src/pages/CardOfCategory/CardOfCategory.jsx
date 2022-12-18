@@ -4,8 +4,8 @@ import { useParams, Link } from 'react-router-dom'
 import Icon from '../../components/Icon/Icon.jsx'
 
 const CardOfCategory = (props) => {
-  console.log("cardlist props:" , props)
-  const { category } = useParams()
+  const { category, id } = useParams()
+  console.log("category params" , category[0].toUpperCase() + category.slice(1))
 
   return (
     <main className={styles.container}>
@@ -15,7 +15,7 @@ const CardOfCategory = (props) => {
           <h1>{category.toUpperCase()}</h1>
         </div>
         {props.card.map((card, idx) => (
-          (card.category === {category}) ?
+          (card.category[0].toUpperCase() + category.slice(1) === category[0].toUpperCase() + category.slice(1)) ?
           <Card card={card} handleAddFavorites={props.handleAddFavorites} key={card._id} />
           :
           ''

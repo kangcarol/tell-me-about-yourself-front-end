@@ -16,8 +16,8 @@ const CardList = (props) => {
         </div>
 
         <div>
-        <Link to="/cards/computerscience">
-          <Icon category={'computerscience'} />
+        <Link to="/cards/computer-science">
+          <Icon category={'computer-science'} />
           <h1>COMPUTER SCIENCE</h1>
         </Link>
         </div>

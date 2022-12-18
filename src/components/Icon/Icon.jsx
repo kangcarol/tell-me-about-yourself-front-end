@@ -30,7 +30,7 @@ const Icon = ({ category }) => {
     BookmarkAdd: BookmarkAdd,
     BookmarkDelete: BookmarkDelete,
     behavioral: Behavioral,
-    computerscience: ComputerScience,
+    'computer-science': ComputerScience,
     javascript: Javascript,
     python: Python,
     react: React,

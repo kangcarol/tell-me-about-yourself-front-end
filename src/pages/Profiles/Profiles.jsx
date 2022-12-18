@@ -21,6 +21,7 @@ const Profiles = () => {
         <>
           {profiles.map(profile =>
             <div key={profile._id}>
+              <img src={profile.photo} alt="avatar"/>
               <h2>{profile.name}</h2>
               <p>"{profile.about} "</p>
             </div>
