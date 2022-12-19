@@ -1,10 +1,13 @@
-.container main {
-  width: 100%;
+main {
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
-.container section {
-  width: 50%;
-  padding: 0 0 8% 0;
+.container > section {
+  width: 30%;
+  padding: 0 0 20% 0;
 }
 
 .container div {
@@ -22,9 +25,9 @@
 }
 
 .container summary > img {
-  width: 120%;
+  width: 200px;
   /* padding-right: 10px; */
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 
 .container h1 {

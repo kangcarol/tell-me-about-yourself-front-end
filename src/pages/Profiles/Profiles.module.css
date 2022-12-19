@@ -19,7 +19,7 @@
 }
 
 .container > article {
-  /* border: 5px solid black; */
+  border: none;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;

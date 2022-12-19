@@ -11,13 +11,13 @@ const CardList = (props) => {
   return (
     <main className={styles.container}>
 
-      {categoryArr.map(c =>
-        <section>
+      {categoryArr.map((c, idx) =>
+        <section key={idx}>
           <details>
             <summary>
-              <Icon category={c} />
+              <Icon category={c}/>
               <h1>{c.toUpperCase()}</h1></summary>
-            {props.card.map((card, idx) => (
+            {props.card.map((card) => (
               (card.category === c) ?
               <Card card={card} handleAddFavorites={props.handleAddFavorites} key={card._id} />
               :

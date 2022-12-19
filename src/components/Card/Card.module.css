@@ -20,10 +20,10 @@ article {
   width: 5%
 }
 
-.container > button > img {
+.container > summary> img {
   background: none;
   border: none;
-  width: 60%;
+  width: 6  0%;
 }
 
 .container > button > img:hover {
