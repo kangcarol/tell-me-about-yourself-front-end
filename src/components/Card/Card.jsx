@@ -13,20 +13,23 @@ const Card = (props) => {
         <Icon category={props.card.category} />
         <h2>{props.card.category}</h2>
       </div> */}
-      <Link to={`/cards/${props.card._id}`} className={styles.container}>
         <article className={styles.container}>
           
           {(location.pathname ==='/cards') || (location.pathname !=='/cards' && props.favorites===false) ?
 
-          <button className="btn" onClick={() => props.handleAddFavorites(props.card)}><Icon category={'BookmarkAdd'} /></button>
+          <button className="btn" onClick={() => props.handleAddFavorites(props.card)}>
+            <Icon category={'BookmarkAdd'} />
+          {/* Bookmark It */}
+          </button>
           :
           <Icon category={'BookmarkDelete'} />
           }
 
-          <h2 className={styles.container}>{props.card.text.toUpperCase()}</h2>
+          <Link to={`/cards/${props.card._id}`} className={styles.container}>
+              <h2 className={styles.container}>{props.card.text.toUpperCase()}</h2>
+          </Link>
 
         </article>
-      </Link>
     </>
   )
 }

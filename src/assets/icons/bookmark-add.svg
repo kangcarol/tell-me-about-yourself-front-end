@@ -1,7 +1,1 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 48 48" width="48px" height="48px">
-<g id="surface36218831">
-<path style=" stroke:none;fill-rule:nonzero;fill:rgb(2.745098%,2.745098%,2.745098%);fill-opacity:1;" d="M 37 43 L 24 37 L 11 43 L 11 9 C 11 6.800781 12.800781 5 15 5 L 33 5 C 35.199219 5 37 6.800781 37 9 Z M 37 43 "/>
-<path style=" stroke:none;fill-rule:nonzero;fill:rgb(97.254902%,95.686275%,95.686275%);fill-opacity:1;" d="M 29.0625 20.0625 L 25.3125 20.0625 L 25.3125 16.3125 L 23.4375 16.3125 L 23.4375 20.0625 L 19.6875 20.0625 L 19.6875 21.9375 L 23.4375 21.9375 L 23.4375 25.6875 L 25.3125 25.6875 L 25.3125 21.9375 L 29.0625 21.9375 Z M 29.0625 20.0625 "/>
-</g>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M0 48V487.7C0 501.1 10.9 512 24.3 512c5 0 9.9-1.5 14-4.4L192 400 345.7 507.6c4.1 2.9 9 4.4 14 4.4c13.4 0 24.3-10.9 24.3-24.3V48c0-26.5-21.5-48-48-48H48C21.5 0 0 21.5 0 48z"/></svg>

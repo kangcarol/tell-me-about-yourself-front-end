@@ -30,6 +30,10 @@ body {
   'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  --primary: #00a0df;
+  --font: black;
+  --hover: palegreen;
+
 }
 
 #root {
@@ -61,7 +65,7 @@ a {
 }
 
 a:hover {
-  color: palegreen;
+  color: var(--hover)
 }
 
 li {

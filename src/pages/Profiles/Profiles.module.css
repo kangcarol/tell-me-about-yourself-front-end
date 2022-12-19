@@ -2,6 +2,7 @@
   width: 100%;
   display: flex;
   align-items: center;
+  /* flex-wrap: wrap; */
 }
 
 .container > h1 {
@@ -51,17 +52,12 @@
 
 .container > div:last-child {
   display: flex;
-  /* flex-direction: column; */
   justify-content: center;
   overflow:scroll;
   scroll-snap-type: y mandatory;
-  /* overflow: hidden; */
-  /* -webkit-line-clamp: 3;
-  text-overflow: ellipsis; */
 }
 
 .container > div > p {
-  /* overflow:scroll; */
   font-size: 15px;
   font-weight: 400;
   margin: 0;
