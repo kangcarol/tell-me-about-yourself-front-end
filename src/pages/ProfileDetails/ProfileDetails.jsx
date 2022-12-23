@@ -1,6 +1,6 @@
 import styles from "./ProfileDetails.module.css"
 import { useState, useEffect } from "react"
-import { useParams } from "react-router-dom"
+import { useParams, Link } from "react-router-dom"
 import Card from "../../components/Card/Card"
 import ProfileIcon from '../../assets/icons/profile.png'
 
@@ -28,16 +28,22 @@ const ProfileDetails = (props) => {
 
   return (
     <main className={styles.container}>
-      <article>
 
         <header className={styles.container}>
+          <div>
             {profile.photo ?
             <img src={profile.photo} alt="User's avatar"/>
             :
             <img src={ProfileIcon} alt="Default avatar"/>}
-            <h1>{profile.name.toUpperCase()}'S BOOKMARKS</h1>
+          
+            <h1>{profile.name.toUpperCase()}</h1>
+          </div>
+            <p>{profile.about}</p>
+            <Link to={`/profiles/${id}/edit`} state={profile}>Edit About</Link>
         </header>
 
+        <article>
+          <h1>BOOKMARKS</h1>
           {props.favorites.map((card) => (
 
             <Card favortites={true} card={card} handleAddFavorites={props.handleAddFavorites} handleRemoveFavorites={props.handleRemoveFavorites}key={card._id} />

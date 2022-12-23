@@ -9,6 +9,7 @@ import Landing from './pages/Landing/Landing'
 import About from './pages/About/About'
 import Profiles from './pages/Profiles/Profiles'
 import ProfileDetails from './pages/ProfileDetails/ProfileDetails'
+import ProfileEdit from './pages/ProfileEdit/ProfileEdit'
 import ChangePassword from './pages/ChangePassword/ChangePassword'
 
 import CardList from './pages/CardList/CardList'
@@ -31,6 +32,7 @@ import './App.css'
 const App = () => {
   const [user, setUser] = useState(authService.getUser())
   const [cards,setCards] = useState([])
+  const [profiles, setProfiles] = useState([])
   const [favorites, setFavorites] = useState([])
   const navigate = useNavigate()
 
@@ -93,6 +95,16 @@ const App = () => {
     if (user) fetchAllCards()
   }, [user])
 
+  const handleUpdateProfile = async (profileData) => {
+    // profileData._id will be 634daa34dc0dfecfbb5767de for example
+    const updatedProfile = await profileService.update(profileData)
+
+    const updatedProfileData = profiles.map(profile => {
+      return profileData._id === profile._id ? updatedProfile : profile
+    })
+    setProfiles(updatedProfileData)
+    navigate(`/profiles/${user.profile}`)
+  }
 
   return (
     <>
@@ -128,7 +140,6 @@ const App = () => {
             </ProtectedRoute>
           }
         />
-
         <Route path="/cards/:id" element={
           <ProtectedRoute user={user}>
             <CardDetails
@@ -173,6 +184,17 @@ const App = () => {
               favorites={favorites}
               handleAddFavorites={handleAddFavorites}
               handleRemoveFavorites={handleRemoveFavorites}
+              />
+            </ProtectedRoute>
+          }
+        />
+        <Route
+          path="/profiles/:id/edit"
+          element={
+            <ProtectedRoute user={user}>
+              <ProfileEdit 
+              user={user}
+              handleUpdateProfile={handleUpdateProfile}
               />
             </ProtectedRoute>
           }
