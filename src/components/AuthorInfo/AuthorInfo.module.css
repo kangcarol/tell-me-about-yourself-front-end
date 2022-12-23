@@ -1,0 +1,15 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.container > img {
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+}
+
+.container > h4 {
+  padding-left: 10px;
+}

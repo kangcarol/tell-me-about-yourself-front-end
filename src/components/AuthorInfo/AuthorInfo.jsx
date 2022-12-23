@@ -7,10 +7,10 @@ const AuthorInfo = ({ content }) => {
   return (
     <div className={styles.container}>
       <img src={photo} alt="The user's avatar" />
-      <section>
-        <h4>{content.author.name}</h4>
-        <DateCard createdAt={content.createdAt} />
-      </section>
+      {/* <section> */}
+        <h4>{content.author.name.toUpperCase()}'s question</h4>
+        {/* <DateCard createdAt={content.createdAt} /> */}
+      {/* </section> */}
     </div>
   )
 }
