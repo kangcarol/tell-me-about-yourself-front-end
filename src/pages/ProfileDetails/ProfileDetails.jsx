@@ -40,15 +40,17 @@ const ProfileDetails = (props) => {
             <div>
               <p>{profile.about}</p>
             </div>
-              <Link to={`/profiles/${id}/edit`} state={profile}>Edit About</Link>
+              <Link to={`/profiles/${id}/edit`} state={profile}>Edit</Link>
           </section>
         </header>
 
-        <article>
+        <article className={styles.container}>
           <h1>BOOKMARKS</h1>
+          
           {props.favorites.map((card) => (
-
-            <Card favortites={true} card={card} handleAddFavorites={props.handleAddFavorites} handleRemoveFavorites={props.handleRemoveFavorites}key={card._id} />
+            <div className={styles.card}>
+              <Card favortites={true} card={card} handleAddFavorites={props.handleAddFavorites} handleRemoveFavorites={props.handleRemoveFavorites}key={card._id} />
+            </div>
             
           ))}
 
