@@ -28,12 +28,13 @@ const ProfileEdit = (props) => {
 
   return (
     <main className={styles.container}>
+      <h1>Edit for {form.name}</h1>
     <form
       autoComplete="off"
       onSubmit={handleSubmit}
       className={styles.container}
     >
-      <div className={styles.inputContainer}>
+      {/* <div className={styles.inputContainer}>
         <label htmlFor="name" className={styles.label}>Name</label>
         <input
           type="text"
@@ -43,7 +44,7 @@ const ProfileEdit = (props) => {
           name="name"
           onChange={handleChange}
         />
-      </div>
+      </div> */}
       <div className={styles.inputContainer}>
         <label htmlFor="about" className={styles.label}>Tell Me About Yourself</label>
         <input
