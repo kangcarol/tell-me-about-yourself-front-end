@@ -26,17 +26,16 @@ const ProfileDetails = (props) => {
 
   return (
     <main className={styles.container}>
-      <article className={styles.profileDetails}>
+      <article>
 
-        <header>
+        <header className={styles.container}>
             {profile.photo ?
             <img src={profile.photo} alt="User's avatar"/>
             :
             <img src={ProfileIcon} alt="Default avatar"/>}
-            <h1>{profile.name.toUpperCase()}</h1>
+            <h1>{profile.name.toUpperCase()}'S BOOKMARKS</h1>
         </header>
 
-        <h2>BOOKMARKS</h2>
           {props.favorites.map(card => (
             
             <Card favorites={true} card={card} key={card._id}/>

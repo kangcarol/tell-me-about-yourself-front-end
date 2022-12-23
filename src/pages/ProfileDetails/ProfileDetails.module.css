@@ -1,0 +1,22 @@
+.container article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container header{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.container > img {
+  border-radius: 50%;
+  width: 65px;
+  height: 65px;
+}
+
+.container > h1 {
+  font-size: 2em;
+  padding-left: 10px;
+}
