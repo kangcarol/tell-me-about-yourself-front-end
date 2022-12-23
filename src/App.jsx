@@ -49,6 +49,11 @@ const App = () => {
     navigate(`/profiles/${user.profile}`)
   }
 
+  const handleRemoveFavorites = (removeCard) => {
+    setFavorites(cards.filter(c => c._id !== removeCard._id))
+    navigate(`/profiles/${user.profile}`)
+  }
+
   const handleAddCard = async (cardData) => {
     // cardData will have a shape of:
     //   {
@@ -118,6 +123,7 @@ const App = () => {
               card={cards}
               favorites={favorites}
               handleAddFavorites={handleAddFavorites}
+              handleRemoveFavorites={handleRemoveFavorites}
               />
             </ProtectedRoute>
           }
@@ -125,7 +131,12 @@ const App = () => {
 
         <Route path="/cards/:id" element={
           <ProtectedRoute user={user}>
-            <CardDetails user={user} handleDeleteCard={handleDeleteCard} />
+            <CardDetails
+            user={user}
+            handleDeleteCard={handleDeleteCard}
+            handleAddFavorites={handleAddFavorites}
+            handleRemoveFavorites={handleRemoveFavorites}
+            />
           </ProtectedRoute>
         } />
 
@@ -161,6 +172,7 @@ const App = () => {
               card={cards}
               favorites={favorites}
               handleAddFavorites={handleAddFavorites}
+              handleRemoveFavorites={handleRemoveFavorites}
               />
             </ProtectedRoute>
           }

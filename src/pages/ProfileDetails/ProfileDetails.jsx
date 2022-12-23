@@ -22,6 +22,8 @@ const ProfileDetails = (props) => {
     fetchProfile()
   }, [id])
 
+  console.log("PROPS FAVORITES" , props.favorites)
+
   if (!profile) return <Loading />
 
   return (
@@ -36,9 +38,9 @@ const ProfileDetails = (props) => {
             <h1>{profile.name.toUpperCase()}'S BOOKMARKS</h1>
         </header>
 
-          {props.favorites.map(card => (
-            
-            <Card favorites={true} card={card} key={card._id}/>
+          {props.favorites.map((card) => (
+
+            <Card favortites={true} card={card} handleAddFavorites={props.handleAddFavorites} handleRemoveFavorites={props.handleRemoveFavorites}key={card._id} />
             
           ))}
 

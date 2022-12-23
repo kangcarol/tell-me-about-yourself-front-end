@@ -19,10 +19,12 @@ const Card = (props) => {
 
           <button className="btn" onClick={() => props.handleAddFavorites(props.card)}>
             <Icon category={'BookmarkAdd'} />
-          {/* Bookmark It */}
           </button>
           :
-          <Icon category={'BookmarkDelete'} />
+          <button className="btn" onClick={() => props.handleRemoveFavorites(props.card)}>
+            <Icon category={'BookmarkDelete'} />
+          </button>
+          // <Icon category={'BookmarkDelete'} />
           }
 
           <Link to={`/cards/${props.card._id}`} className={styles.container}>

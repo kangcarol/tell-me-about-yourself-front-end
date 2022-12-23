@@ -19,7 +19,7 @@ const CardList = (props) => {
               <h1>{c.toUpperCase()}</h1></summary>
             {props.card.map((card) => (
               (card.category === c) ?
-              <Card card={card} handleAddFavorites={props.handleAddFavorites} key={card._id} />
+              <Card card={card} handleAddFavorites={props.handleAddFavorites} handleRemoveFavorites={props.handleRemoveFavorites}key={card._id} />
               :
               ''
             ))}
