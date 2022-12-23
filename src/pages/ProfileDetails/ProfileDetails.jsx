@@ -30,16 +30,18 @@ const ProfileDetails = (props) => {
     <main className={styles.container}>
 
         <header className={styles.container}>
-          <div>
             {profile.photo ?
             <img src={profile.photo} alt="User's avatar"/>
             :
             <img src={ProfileIcon} alt="Default avatar"/>}
           
+          <section>
             <h1>{profile.name.toUpperCase()}</h1>
-          </div>
-            <p>{profile.about}</p>
-            <Link to={`/profiles/${id}/edit`} state={profile}>Edit About</Link>
+            <div>
+              <p>{profile.about}</p>
+            </div>
+              <Link to={`/profiles/${id}/edit`} state={profile}>Edit About</Link>
+          </section>
         </header>
 
         <article>

@@ -50,7 +50,7 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-top: 8%;
+  padding-top: 5%;
 }
 
 form {
