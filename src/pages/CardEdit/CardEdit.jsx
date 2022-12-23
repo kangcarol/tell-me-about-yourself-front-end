@@ -18,7 +18,7 @@ const CardEdit = (props) => {
   }
 
   return (
-    <main className={styles.container}A>
+    <main className={styles.container}>
       <form onSubmit={handleSubmit}>
         <select
           required
