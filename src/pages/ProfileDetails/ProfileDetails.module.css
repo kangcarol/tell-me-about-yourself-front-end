@@ -13,6 +13,7 @@
   width: 60%;
   margin: 2%;
   padding: 2%;
+  border-radius: 10px;
   background-color: rgb(229, 171, 171);
   box-shadow: -1px 10px 19px -5px rgba(0,0,0,0.25);
   -moz-box-shadow: -1px 5px 19px -5px rgba(0,0,0,0.25);
@@ -46,7 +47,7 @@
 
 .container header > section > div > p {
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 300;
   /* overflow:scroll; */
   /* scroll-snap-type: y mandatory; */
   line-height: 1.25rem;
@@ -56,11 +57,11 @@
   text-overflow: ellipsis;
   -webkit-box-orient: vertical;
   scroll-snap-align: start;
-  margin: 5px 0 0px 0;
+  margin: 4px 0 0px 0;
 }
 
 .container header > section > div > p:hover {
-  font-weight: bold;
+  font-weight: 400;
 }
 
 .container > section:first-child {

@@ -17,3 +17,8 @@ nav > ul > li {
   padding: 0 10px;
 }
 
+nav  a {
+  font-size: 1.25em;
+  font-weight: 400;
+} 
+
