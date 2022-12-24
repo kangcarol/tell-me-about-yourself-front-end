@@ -37,6 +37,10 @@ const ProfileDetails = (props) => {
           
           <section>
             <h1>{profile.name.toUpperCase()}</h1>
+            {(profile.linkedin) ?
+                <h4><a href={profile.linkedin} rel= "noreferrer" target="_blank">LinkedIn</a></h4>
+                :
+                ''}
             <div>
               <p>{profile.about}</p>
             </div>

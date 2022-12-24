@@ -10,7 +10,7 @@
   flex-direction: row;
   align-items: flex-start;
   justify-content: flex-start;
-  width: 60%;
+  width: 80%;
   margin: 2%;
   padding: 2%;
   border-radius: 10px;
@@ -37,9 +37,9 @@
   -webkit-box-shadow: -1px 5px 19px -5px rgba(0,0,0,0.25);
 }
 
-.container header > section > h1 {
+.container header > section > h1, h4 {
   font-size: 1.5em;
-  margin: 0 0 10px 0;
+  margin: 0 0 5px 0;
 }
 
 .container header > section > div {
@@ -82,4 +82,9 @@
 .card article {
   display: flex;
   flex-direction: row;
+}
+
+.container a:first-child {
+  font-weight: 600;
+  font-size: .8em;
 }
