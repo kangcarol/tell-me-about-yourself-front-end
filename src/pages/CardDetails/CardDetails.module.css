@@ -1,9 +1,36 @@
 .container article {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
+  width: 50%;
+  border-radius: 10px;
+  background-color: rgb(229, 171, 171);
+  box-shadow: -1px 10px 19px -5px rgba(0,0,0,0.25);
+  -moz-box-shadow: -1px 5px 19px -5px rgba(0,0,0,0.25);
+  -webkit-box-shadow: -1px 5px 19px -5px rgba(0,0,0,0.25);
 }
 
 img {
   width: 20%;
+}
+
+.container div {
+  width: 90%;
+}
+
+/* .container button {
+  margin: 5px;
+  padding: 5px;
+  width: 60px;
+  border-radius: 8px;
+  border: none;
+  font-weight: 400;
+  background-color: rgb(232, 214, 214);
+  box-shadow: -1px 10px 19px -5px rgba(0,0,0,0.25);
+  -moz-box-shadow: -1px 5px 19px -5px rgba(0,0,0,0.25);
+  -webkit-box-shadow: -1px 5px 19px -5px rgba(0,0,0,0.25);
+} */
+
+.container a {
+  font-weight: 400;
 }

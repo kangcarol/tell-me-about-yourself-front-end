@@ -32,6 +32,9 @@
   border-radius: 50%;
   width: 150px;
   height: 150px;
+  box-shadow: -1px 10px 19px -5px rgba(0,0,0,0.25);
+  -moz-box-shadow: -1px 5px 19px -5px rgba(0,0,0,0.25);
+  -webkit-box-shadow: -1px 5px 19px -5px rgba(0,0,0,0.25);
 }
 
 .container header > section > h1 {
@@ -48,8 +51,6 @@
 .container header > section > div > p {
   font-size: 16px;
   font-weight: 300;
-  /* overflow:scroll; */
-  /* scroll-snap-type: y mandatory; */
   line-height: 1.25rem;
   display: -webkit-box;
   -webkit-line-clamp: 4;
@@ -69,7 +70,6 @@
   flex-direction: column;
   justify-content: flex-start;
 }
-
 
 .container > article {
   display: flex;

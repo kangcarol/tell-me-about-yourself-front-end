@@ -6,11 +6,12 @@ const AuthorInfo = ({ content }) => {
   const photo = content.author.photo ? content.author.photo : ProfileIcon
   return (
     <div className={styles.container}>
-      <img src={photo} alt="The user's avatar" />
-      {/* <section> */}
-        <h4>{content.author.name.toUpperCase()}'s question</h4>
+        <img src={photo} alt="The user's avatar" />
+      <div>
+        <h4>contributed by</h4>
+        <h4>{content.author.name.toUpperCase()}</h4>
         {/* <DateCard createdAt={content.createdAt} /> */}
-      {/* </section> */}
+      </div>
     </div>
   )
 }

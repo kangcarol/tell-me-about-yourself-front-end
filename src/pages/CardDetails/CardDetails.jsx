@@ -27,27 +27,29 @@ const CardDetails = (props) => {
   return (
     <main className={styles.container}>
       <article>
-        <header>
-          <h3>{card.category.toUpperCase()}</h3>
-          <span>
-            <AuthorInfo content={card} />
-          </span>
-        </header>
-        <h1>{card.text}</h1>
-        <details>
-          <summary>Need some help?</summary>
-        </details>
-        <details>
-          <summary>Answer</summary>
-          <p>{card.answer}</p>
-          <a href={card.source} rel="noreferrer" target="_blank">Source</a>
-        </details>
-            {card.author._id === props.user.profile && 
-              <>
-                <button><Link to={`/cards/${id}/edit`} state={card}>Edit</Link></button>
-                <button onClick={() => props.handleDeleteCard(id)}>Delete</button>
-              </>
-            }
+        <div>
+          <header>
+            <h3>{card.category.toUpperCase()}</h3>
+          </header>
+          <h1>{card.text}</h1>
+          <details>
+            <summary>Need some help?</summary>
+          </details>
+          <details>
+            <summary>Answer</summary>
+            <p>{card.answer}</p>
+            <a href={card.source} rel="noreferrer" target="_blank">Source</a>
+          </details>
+            <span>
+              <AuthorInfo content={card} />
+            </span>
+              {card.author._id === props.user.profile && 
+                <>
+                  <button><Link to={`/cards/${id}/edit`} state={card}>Edit</Link></button>
+                  <button onClick={() => props.handleDeleteCard(id)}>Delete</button>
+                </>
+              }
+        </div>
       </article>
     </main>
   )
