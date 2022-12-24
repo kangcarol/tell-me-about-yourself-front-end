@@ -45,11 +45,11 @@ body {
 }
 
 main {
-  border: 1px solid red;
+  /* border: 1px solid red; */
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-top: 5%;
+  padding-top: 12%;
   width: 80%;
 }
 

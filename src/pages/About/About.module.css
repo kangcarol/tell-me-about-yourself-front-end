@@ -1,0 +1,11 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container h4 {
+  width: 50%;
+  font-size: 1.5em;
+  font-weight: 400;
+}
