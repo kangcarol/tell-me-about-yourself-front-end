@@ -12,11 +12,6 @@
   padding: 10px 0;
 }
 
-/* .container > h4 {
-  font-weight: 400;
-  margin: 0;
-} */
-
 .container > img {
   border-radius: 50%;
   width: 32px;
@@ -24,6 +19,6 @@
 }
 
 .container > div > h4 {
-  margin: 0;
+  margin: 0 0 0 10px;
   font-weight: 300;
 }

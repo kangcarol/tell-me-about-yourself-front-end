@@ -37,7 +37,7 @@ const SignupForm = props => {
     }
   }
 
-  const { name, about, email, password, passwordConf } = formData
+  const { name, about, linkedin, email, password, passwordConf } = formData
 
   const isFormInvalid = () => {
     return !(name && email && password && password === passwordConf)
@@ -68,6 +68,17 @@ const SignupForm = props => {
           id="about"
           value={about}
           name="about"
+          onChange={handleChange}
+        />
+      </div>
+      <div className={styles.inputContainer}>
+        <label htmlFor="linkedin" className={styles.label}>LinkedIn</label>
+        <input
+          type="text"
+          autoComplete="off"
+          id="linkedin"
+          value={linkedin}
+          name="linkedin"
           onChange={handleChange}
         />
       </div>

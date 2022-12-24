@@ -23,7 +23,8 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  width: 35%;
+  align-items: flex-start;
+  width: 40%;
   height: 360px;
   margin: 2%;
   padding: 2%;
@@ -38,6 +39,20 @@
   display: flex;
   height: 80px;
   padding-bottom: 20px;
+}
+
+.container > div:first-child > span{
+  display: flex;
+  flex-direction: column;
+}
+
+.container > div:first-child > span > h2, h4{
+  margin: 0 0 0 15px;
+}
+
+.container a {
+  font-weight: 400;
+  font-size: 1.2em;
 }
 
 .container > div > img {

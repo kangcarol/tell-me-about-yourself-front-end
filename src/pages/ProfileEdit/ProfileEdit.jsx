@@ -57,6 +57,17 @@ const ProfileEdit = (props) => {
         />
       </div>
       <div className={styles.inputContainer}>
+        <label htmlFor="linkedin" className={styles.label}>LinkedIn</label>
+        <input
+          type="text"
+          autoComplete="off"
+          id="linkedin"
+          value={form.linkedin}
+          name="linkedin"
+          onChange={handleChange}
+        />
+      </div>
+      <div className={styles.inputContainer}>
         <label htmlFor="email" className={styles.label}>Email</label>
         <input
           type="text"
