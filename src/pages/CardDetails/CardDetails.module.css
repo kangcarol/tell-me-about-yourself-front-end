@@ -15,7 +15,9 @@ img {
 }
 
 .container div {
-  width: 90%;
+  width: 85%;
+  padding: 5%;
+
 }
 
 /* .container button {
@@ -31,6 +33,27 @@ img {
   -webkit-box-shadow: -1px 5px 19px -5px rgba(0,0,0,0.25);
 } */
 
+.container details {
+  padding: 2% 0;
+}
+
+.container p {
+  margin: 10px 0 10px 20px;
+
+}
+
+.container details > a {
+  font-weight: 300;
+  font-style: italic;
+  margin: 0px 0 0px 20px;
+}
+
 .container a {
   font-weight: 400;
+  font-style: normal;
+  margin: 0;
+}
+
+.container button:hover {
+  color: var(--hover)
 }
