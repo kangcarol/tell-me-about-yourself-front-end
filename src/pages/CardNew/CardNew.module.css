@@ -1,7 +1,7 @@
 .container input {
   margin: 0px 0 15px 0 ;
   height: 32px;
-  color: red;
+  color: gray;  
   font-size: 16px;
   background-color: white;
   padding: 0 8px;
@@ -11,6 +11,7 @@
   margin: 0 ;
   min-height: 80px;
   font-size: 16px;
+  color: gray;
   background-color: white;
   padding: 8px;
   border-radius: 5px;

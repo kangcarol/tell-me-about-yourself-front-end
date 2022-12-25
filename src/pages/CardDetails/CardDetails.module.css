@@ -17,7 +17,7 @@ img {
 .container div {
   width: 85%;
   padding: 5%;
-  padding: 10px 0 0 0;
+  padding: 0;
 }
 
 .container details {
@@ -36,7 +36,8 @@ img {
 
 .container a {
   font-weight: 400;
-  /* font-style: normal; */
+  font-style: normal;
+  font-size: 1em;
   margin: 0;
 }
 
@@ -51,4 +52,5 @@ img {
 .container span {
   display: flex;
   align-items: center;
+  padding-top: 10px;
 }

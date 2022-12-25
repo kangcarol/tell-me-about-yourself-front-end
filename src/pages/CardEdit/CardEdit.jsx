@@ -20,6 +20,7 @@ const CardEdit = (props) => {
   return (
     <main className={styles.container}>
       <form onSubmit={handleSubmit}>
+      <label htmlFor="category-input">Category</label>
         <select
           required
           name="category"
