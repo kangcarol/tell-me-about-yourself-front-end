@@ -42,7 +42,7 @@ const CardNew = (props) => {
           <option value="Other">Other</option>
         </select>
         <label htmlFor="text-input">Question</label>
-        <input
+        <textarea
           required
           type="text"
           name="text"
@@ -52,7 +52,7 @@ const CardNew = (props) => {
           onChange={handleChange}
         />
         <label htmlFor="text-input">Answer</label>
-        <input
+        <textarea
           required
           type="text"
           name="answer"

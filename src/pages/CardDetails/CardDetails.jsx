@@ -38,17 +38,17 @@ const CardDetails = (props) => {
           <details>
             <summary>Answer</summary>
             <p>{card.answer}</p>
-            <a href={card.source} rel="noreferrer" target="_blank">- source - </a>
+            <a href={card.source} rel="noreferrer" target="_blank">-source- </a>
           </details>
             <span>
               <AuthorInfo content={card} />
-            </span>
               {card.author._id === props.user.profile && 
                 <>
                   <button><Link to={`/cards/${id}/edit`} state={card}>Edit</Link></button>
                   <button onClick={() => props.handleDeleteCard(id)}>Delete</button>
                 </>
               }
+            </span>
         </div>
       </article>
     </main>

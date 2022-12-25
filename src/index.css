@@ -23,6 +23,7 @@ code {
 }
 
 body {
+  overflow: hidden;
   margin: 0;
   background-color: rgb(214, 160, 160);
   font-family: 'Albert Sans', sans-serif;
@@ -32,6 +33,7 @@ body {
   --primary: #00a0df;
   --font: black;
   --hover: palegreen;
+  --boxcolor:   background-color: rgb(229, 171, 171);
 
 }
 
@@ -62,10 +64,12 @@ button {
   margin: 5px;
   padding: 5px;
   width: 60px;
+  height: 30px;
   border-radius: 8px;
   border: none;
   font-weight: 400;
-  background-color: rgb(232, 214, 214);
+  font-family: 'Albert Sans', sans-serif;
+  background-color: var(--boxcolor);
   box-shadow: -1px 10px 19px -5px rgba(0,0,0,0.25);
   -moz-box-shadow: -1px 5px 19px -5px rgba(0,0,0,0.25);
   -webkit-box-shadow: -1px 5px 19px -5px rgba(0,0,0,0.25);
@@ -84,5 +88,39 @@ a:hover {
 
 li {
   list-style: none;
+}
+
+form {
+  width: 100%;
+  display: flex;
+  max-width: 500px;
+  border-radius: 10px;
+  flex-direction: column;
+  background-color: var(--boxcolor);
+  padding: 21px 21px 28px 21px;
+  box-shadow: -1px 5px 19px -5px rgba(0,0,0,0.25);
+  -moz-box-shadow: -1px 5px 19px -5px rgba(0,0,0,0.25);
+  -webkit-box-shadow: -1px 5px 19px -5px rgba(0,0,0,0.25);
+}
+
+select {
+  font-size: 16px;
+  font-weight: 400px;
+  margin: 0;
+  padding: 5px;
+  color:gray;
+  height: 32px;
+  border-radius: 5px;
+  border: none;
+}
+
+label {
+  font-size: 16px;
+  margin: 15px 0 0 0;
+  color:var(--font);
+  height: 32px;
+  border-radius: 5px;
+  font-size: 18px;
+  margin: 0;
 }
 

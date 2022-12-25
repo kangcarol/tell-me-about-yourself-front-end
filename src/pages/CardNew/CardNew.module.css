@@ -1,0 +1,33 @@
+.container input {
+  margin: 0px 0 15px 0 ;
+  height: 32px;
+  color: red;
+  font-size: 16px;
+  background-color: white;
+  padding: 0 8px;
+}
+
+.container textarea {
+  margin: 0 ;
+  min-height: 80px;
+  font-size: 16px;
+  background-color: white;
+  padding: 8px;
+  border-radius: 5px;
+  border: none;
+  font-family:  'Albert Sans', sans-serif;
+}
+
+.container label {
+  font-weight: 600;
+  margin: 15px 0 0 0;
+}
+
+.container select {
+  margin: 0;
+}
+
+input:focus, select:focus, textarea:focus {
+  outline: none;
+  border: 1px solid var(--primary);
+}
