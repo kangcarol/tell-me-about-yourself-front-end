@@ -4,17 +4,12 @@ header {
   justify-content: space-between;
   align-items: flex-start;
   position: fixed;
-  z-index: 10;
 }
 
 nav {
-  /* width: 100%; */
   display: flex;
-  /* justify-items: center; */
-  justify-content: space-between;
   align-items: center;
-
-  /* position: fixed; */
+  padding: .5% 3%;
 }
 
 nav > ul {
@@ -22,12 +17,12 @@ nav > ul {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding: .5% 0%;
 }
 
 nav > ul > li {
   padding: 0 10px;
   text-align: center;
+  width:max-content;
 }
 
 nav a {
@@ -37,5 +32,6 @@ nav a {
 } 
 
 header img {
-  width: 100%;
+  width: 60%;
+  padding: 5% 5% 5% 8%;
 }

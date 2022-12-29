@@ -1,11 +1,6 @@
-.container article {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-top: 8%;
-}
 
-.container header{
+
+.container > header{
   display: flex;
   flex-direction: row;
   align-items: flex-start;
@@ -20,7 +15,7 @@
   -webkit-box-shadow: -1px 5px 19px -5px rgba(0,0,0,0.25);
 }
 
-.container > section {
+.container > header > section {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -28,27 +23,28 @@
   padding-left: 5%;
 }
 
-.container header > img {
+.container > header > img {
   border-radius: 50%;
   width: 150px;
   height: 150px;
+  padding: 0;
   box-shadow: -1px 10px 19px -5px rgba(0,0,0,0.25);
   -moz-box-shadow: -1px 5px 19px -5px rgba(0,0,0,0.25);
   -webkit-box-shadow: -1px 5px 19px -5px rgba(0,0,0,0.25);
 }
 
-.container header > section > h1, h4, a {
+.container > header > section > h1, h4, a {
   font-size: 1.5em;
   margin: 0 0 5px 0;
 }
 
-.container header > section > div {
+.container > header > section > div {
   overflow: scroll;
   scroll-snap-type: y mandatory;
   margin-bottom: 10px;
 }
 
-.container header > section > div > p {
+.container > header > section > div > p {
   font-size: 16px;
   font-weight: 300;
   line-height: 1.25rem;
@@ -61,7 +57,7 @@
   margin: 4px 0 0px 0;
 }
 
-.container header > section > div > p:hover {
+.container > header > section > div > p:hover {
   font-weight: 400;
 }
 
@@ -76,7 +72,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 0;
 }
 
 .card article {
@@ -84,7 +79,7 @@
   flex-direction: row;
 }
 
-.container a{
+.container a {
   font-weight: 400;
   font-size: .9em;
 }

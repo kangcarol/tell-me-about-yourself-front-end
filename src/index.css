@@ -25,13 +25,14 @@ code {
 body {
   overflow: hidden;
   margin: 0;
-  background-color: rgb(214, 160, 160);
+  /* background-color: rgb(214, 160, 160); */
+  background-color: rgb(189, 188, 188);
   font-family: 'Albert Sans', sans-serif;
   font-weight: 300;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  --primary: #00a0df;
-  --font: black;
+  --primary: rgb(12, 115, 241);
+  --fontcolor: white;
   --hover: palegreen;
   --boxcolor:   background-color: rgb(229, 171, 171);
 
@@ -78,7 +79,7 @@ button {
 a {
   text-decoration: none;
   font-weight: bold;
-  color: black;
+  color: white;
 }
 
 a:hover {
@@ -117,7 +118,7 @@ select {
 label {
   font-size: 16px;
   margin: 15px 0 0 0;
-  color:var(--font);
+  color:var(--fontcolor);
   height: 32px;
   border-radius: 5px;
   font-size: 18px;

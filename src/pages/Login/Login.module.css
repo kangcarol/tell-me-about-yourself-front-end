@@ -3,4 +3,10 @@
   align-items: center;
   flex-direction: column;
   justify-content: flex-start;
+  color: var(--primary);
 }
+
+.container h1 {
+  padding: 0;
+}
+

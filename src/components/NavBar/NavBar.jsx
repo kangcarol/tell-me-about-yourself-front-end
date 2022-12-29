@@ -1,4 +1,4 @@
-import { Link, Location, useLocation } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
 import styles from './NavBar.module.css'
 import Logo from '../../assets/branding/logo.svg'
 
@@ -8,9 +8,9 @@ const NavBar = ({ user, handleLogout }) => {
 
   const publicLinks = (
     <ul>
-      <li><Link to="/login">LOG IN</Link></li>
-      <li><Link to="/signup">SIGN UP</Link></li>
       <li><Link to="/about">ABOUT</Link></li>
+      {/* <li><Link to="/login">LOG IN</Link></li>
+      <li><Link to="/signup">SIGN UP</Link></li> */}
     </ul>
   )
 
@@ -21,14 +21,14 @@ const NavBar = ({ user, handleLogout }) => {
       <li><Link to="/cards/new">NEW CARD</Link></li>
       <li><Link to="/profiles">PROFILES</Link></li>
       <li><Link to="/about">ABOUT</Link></li>
-      <li><Link to="/logout" onClick={handleLogout}>LOG OUT</Link></li>
+      <li><Link to="/" onClick={handleLogout}>LOG OUT</Link></li>
     </ul>
   )
 
   return (
-    <header>
-      {(location.pathname !==  '/' || location.pathname ===  '/login' || location.pathname ===  '/signup') ?  <Link to={'/'}><img src={Logo} alt="logo" /></Link> : ''}
-      <nav className={styles.container}>
+    <header className={styles.container}>
+      {(location.pathname !==  '/' || location.pathname ===  '/login' || location.pathname ===  '/signup') ?  <Link to={'/'}><img src={Logo} alt="logo" /></Link> : <span>''</span>}
+      <nav>
         {user ? protectedLinks : publicLinks}
       </nav>
     </header>

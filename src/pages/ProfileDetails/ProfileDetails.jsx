@@ -48,7 +48,7 @@ const ProfileDetails = (props) => {
           </section>
         </header>
 
-        <article className={styles.container}>
+        <article className={styles.container} >
           <h1>BOOKMARKS</h1>
           
           {props.favorites.map((card) => (
