@@ -26,8 +26,8 @@ body {
   overflow: hidden;
   margin: 0;
   /* background-color: rgb(214, 160, 160); */
-  background-color: rgb(189, 188, 188);
-  font-family: 'Albert Sans', sans-serif;
+  background-color: rgb(158, 179, 206);
+  font-family: 'Poppins', sans-serif;
   font-weight: 300;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -43,12 +43,10 @@ body {
   width: 100%;
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
   align-items: center;
 }
 
 main {
-  /* border: 1px solid red; */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -62,6 +60,7 @@ form {
 }
 
 button {
+  color: var(--primary);
   margin: 5px;
   padding: 5px;
   width: 60px;
@@ -69,7 +68,7 @@ button {
   border-radius: 8px;
   border: none;
   font-weight: 400;
-  font-family: 'Albert Sans', sans-serif;
+  font-family: 'Poppins', sans-serif;
   background-color: var(--boxcolor);
   box-shadow: -1px 10px 19px -5px rgba(0,0,0,0.25);
   -moz-box-shadow: -1px 5px 19px -5px rgba(0,0,0,0.25);
@@ -79,7 +78,7 @@ button {
 a {
   text-decoration: none;
   font-weight: bold;
-  color: white;
+  color: var(--primary);
 }
 
 a:hover {

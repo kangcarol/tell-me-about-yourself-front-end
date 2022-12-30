@@ -115,7 +115,7 @@ const ProfileEdit = (props) => {
       </div> */}
       <div className={styles.inputContainer}>
         <button disabled={isFormInvalid()} className={styles.button}>
-          Update
+          update
         </button>
         <Link to="/">
           <button>Cancel</button>

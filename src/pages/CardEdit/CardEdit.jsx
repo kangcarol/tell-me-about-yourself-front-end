@@ -70,7 +70,7 @@ const CardEdit = (props) => {
           onChange={handleChange}
         />
         <label htmlFor="category-input">Category</label>
-        <button type="submit">SUBMIT</button>
+        <button type="submit">Submit</button>
       </form>
     </main>
   )

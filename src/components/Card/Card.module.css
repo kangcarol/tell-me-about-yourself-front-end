@@ -22,7 +22,7 @@ article {
 .container > summary > img {
   background: none;
   border: none;
-  width: 6  0%;
+  width: 60%;
 }
 
 .container > button > img:hover {
@@ -34,7 +34,7 @@ article {
 
 .container h2 {
   margin: 0;
-  font-size: 1.5rem;
+  font-size: 1rem;
 }
 
 .container > article > h2 {

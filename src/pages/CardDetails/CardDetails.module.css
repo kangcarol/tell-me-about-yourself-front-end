@@ -4,7 +4,7 @@
   align-items: center;
   width: 50%;
   border-radius: 10px;
-  background-color: rgb(229, 171, 171);
+  background-color: rgb(245, 243, 243);
   box-shadow: -1px 10px 19px -5px rgba(0,0,0,0.25);
   -moz-box-shadow: -1px 5px 19px -5px rgba(0,0,0,0.25);
   -webkit-box-shadow: -1px 5px 19px -5px rgba(0,0,0,0.25);
@@ -14,7 +14,23 @@ img {
   width: 20%;
 }
 
-.container div {
+.container h1 {
+  background-color: red;
+  width: 40%;
+  border-radius:10px 10px 0 0;
+  text-align: center;
+  margin: 0;
+  padding: 10px 0;
+  z-index: 10;
+  position: absolute;
+}
+
+.container h2 {
+  padding: 18% 0 5% 0;
+  margin: 0;;
+}
+
+.container section {
   width: 85%;
   padding: 5%;
   padding: 0;
@@ -51,6 +67,7 @@ img {
 
 .container span {
   display: flex;
+  justify-content: space-between;
   align-items: center;
   padding-top: 10px;
 }
