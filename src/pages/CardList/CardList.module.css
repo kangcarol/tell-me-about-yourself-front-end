@@ -6,8 +6,18 @@ main {
 }
 
 .container > section {
-  width: 20%;
-  padding: 0 0 2% 0;
+  width: 200px;
+  height: 200px;
+  padding: 2%;
+  margin: 10px;
+  border-radius: 10px;
+  box-shadow: -1px 10px 19px -5px rgba(0,0,0,0.25);
+  -moz-box-shadow: -1px 5px 19px -5px rgba(0,0,0,0.25);
+  -webkit-box-shadow: -1px 5px 19px -5px rgba(0,0,0,0.25);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--secondary);
 }
 
 .container div {
@@ -33,8 +43,9 @@ main {
 .container h1 {
   color: black;
   font-size: 1em;
+  font-weight: 400;
   width: fit-content;
-  margin: 0 2%;
+  margin: 10%;
 }
 
 .container > details {

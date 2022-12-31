@@ -34,6 +34,8 @@ const App = () => {
   const [cards,setCards] = useState([])
   const [profiles, setProfiles] = useState([])
   const [favorites, setFavorites] = useState([])
+  const [categoryCards, setCategoryCards] = useState([])
+
   const navigate = useNavigate()
 
   const handleLogout = () => {
@@ -55,6 +57,11 @@ const App = () => {
     setFavorites(cards.filter(c => c._id !== removeCard._id))
     navigate(`/profiles/${user.profile}`)
   }
+
+  // const handleChooseCategory = (category) => {
+  //   setCategoryCards(cards.filter(c => c._category === category))
+  //   navigate('/cards')
+  // }
 
   const handleAddCard = async (cardData) => {
     // cardData will have a shape of:
@@ -136,6 +143,7 @@ const App = () => {
               favorites={favorites}
               handleAddFavorites={handleAddFavorites}
               handleRemoveFavorites={handleRemoveFavorites}
+              // handleChooseCategory={handleChooseCategory}
               />
             </ProtectedRoute>
           }

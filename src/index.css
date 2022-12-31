@@ -26,15 +26,17 @@ body {
   overflow: hidden;
   margin: 0;
   /* background-color: rgb(214, 160, 160); */
-  background-color: rgb(158, 179, 206);
+  /* background-color: rgb(158, 179, 206); */
+  background-color: rgb(201, 198, 198);
   font-family: 'Poppins', sans-serif;
   font-weight: 300;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   --primary: rgb(12, 115, 241);
+  --secondary: rgb(247, 228, 79);
   --fontcolor: white;
   --hover: palegreen;
-  --boxcolor:   background-color: rgb(229, 171, 171);
+  --boxcolor:  rgb(228, 225, 225);
 
 }
 

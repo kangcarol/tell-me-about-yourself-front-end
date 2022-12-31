@@ -15,13 +15,12 @@ img {
 }
 
 .container h1 {
-  background-color: red;
+  background-color: var(--secondary);
   width: 40%;
   border-radius:10px 10px 0 0;
   text-align: center;
   margin: 0;
   padding: 10px 0;
-  z-index: 10;
   position: absolute;
 }
 

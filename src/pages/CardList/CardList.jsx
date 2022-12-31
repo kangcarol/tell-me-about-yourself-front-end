@@ -1,10 +1,9 @@
 import styles from './CardList.module.css'
 import Card from '../../components/Card/Card'
-import { Link } from 'react-router-dom'
 import Icon from '../../components/Icon/Icon.jsx'
 
 const CardList = (props) => {
-  console.log("cardlist props:" , typeof props) //! get category
+  console.log("cardlist props:" , props)
 
   const categoryArr = ['Behavioral', 'CS', 'Javascript', 'Frontend', 'React', 'Styling', 'Python', 'Databases', 'Backend', 'Other']
 
@@ -16,7 +15,8 @@ const CardList = (props) => {
           <details>
             <summary>
               <Icon category={c}/>
-              <h1>{c.toUpperCase()}</h1></summary>
+              <h1>{c.toUpperCase()}</h1>
+            </summary>
             {props.card.map((card) => (
               (card.category === c) ?
               <Card card={card} handleAddFavorites={props.handleAddFavorites} handleRemoveFavorites={props.handleRemoveFavorites}key={card._id} />
