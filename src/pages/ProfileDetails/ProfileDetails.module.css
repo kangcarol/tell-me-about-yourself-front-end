@@ -5,14 +5,14 @@
   flex-direction: row;
   align-items: flex-start;
   justify-content: flex-start;
-  width: 70%;
+  width: 60%;
   margin: 2%;
   padding: 2%;
   border-radius: 10px;
   background-color: var(--boxcolor);
-  box-shadow: -1px 10px 19px -5px rgba(0,0,0,0.25);
-  -moz-box-shadow: -1px 5px 19px -5px rgba(0,0,0,0.25);
-  -webkit-box-shadow: -1px 5px 19px -5px rgba(0,0,0,0.25);
+  box-shadow: -1px 10px 19px -5px var(--primary);
+  -moz-box-shadow: -1px 5px 19px -5px var(--primary);
+  -webkit-box-shadow: -1px 5px 19px -5px var(--primary);
 }
 
 .container > header > section {
@@ -36,6 +36,10 @@
 .container > header > section > h1, h4, a {
   font-size: 1.25em;
   margin: 0 0 5px 0;
+}
+
+.container > h1 {
+  color: var(--secondary);
 }
 
 .container > header > section > div {
@@ -72,7 +76,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-top: 30%;
+  padding-top: 25%;
 }
 
 .card article {
