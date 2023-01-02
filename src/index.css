@@ -51,7 +51,7 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-top: 12%;
+  padding-top: 10%;
   width: 80%;
 }
 
@@ -118,7 +118,7 @@ select {
 label {
   font-size: 16px;
   margin: 15px 0 0 0;
-  color:var(--fontcolor);
+  color:var(--primary);
   height: 32px;
   border-radius: 5px;
   font-size: 18px;

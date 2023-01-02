@@ -4,9 +4,8 @@ import styles from './About.module.css'
 const About = ({ user }) => {
   return (
     <main className={styles.container}>
-      {/* <h1>Hello, {user ? user.name : 'friend'}</h1> */}
-      {/* <h1>"Tell me about yourself"</h1> */}
-      <h4>TELL ME ABOUT YOURSELF is a flashcard app to help software engineers prep for interviews, both behavioral and technical.</h4>
+
+      <h4><span>TELL ME ABOUT YOURSELF</span> is a flashcard app to help software engineers prep for interviews, both behavioral and technical.</h4>
 
     </main>
   )

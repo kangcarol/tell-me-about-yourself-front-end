@@ -51,6 +51,8 @@ const SignupForm = props => {
     >
       <div className={styles.inputContainer}>
         <label htmlFor="name" className={styles.label}>Name</label>
+      </div>
+      <div>
         <input
           type="text"
           autoComplete="off"
@@ -62,7 +64,9 @@ const SignupForm = props => {
       </div>
       <div className={styles.inputContainer}>
         <label htmlFor="about" className={styles.label}>Tell Me About Yourself</label>
-        <input
+      </div>
+      <div>
+        <textarea
           type="text"
           autoComplete="off"
           id="about"
@@ -73,6 +77,8 @@ const SignupForm = props => {
       </div>
       <div className={styles.inputContainer}>
         <label htmlFor="linkedin" className={styles.label}>LinkedIn</label>
+      </div>
+      <div>
         <input
           type="text"
           autoComplete="off"
@@ -84,6 +90,8 @@ const SignupForm = props => {
       </div>
       <div className={styles.inputContainer}>
         <label htmlFor="email" className={styles.label}>Email</label>
+      </div>
+      <div>
         <input
           type="text"
           autoComplete="off"
@@ -95,6 +103,8 @@ const SignupForm = props => {
       </div>
       <div className={styles.inputContainer}>
         <label htmlFor="password" className={styles.label}>Password</label>
+      </div>
+      <div>
         <input
           type="password"
           autoComplete="off"
@@ -108,6 +118,8 @@ const SignupForm = props => {
         <label htmlFor="confirm" className={styles.label}>
           Confirm Password
         </label>
+      </div>
+      <div>
         <input
           type="password"
           autoComplete="off"
@@ -121,6 +133,8 @@ const SignupForm = props => {
         <label htmlFor="photo-upload" className={styles.label}>
           Upload Photo
         </label>
+      </div>
+      <div>
         <input
           type="file"
           id="photo-upload"
@@ -128,13 +142,14 @@ const SignupForm = props => {
           onChange={handleChangePhoto}
         />
       </div>
+      <div></div>
       <div className={styles.inputContainer}>
-        <button disabled={isFormInvalid()} className={styles.button}>
+        <Link to="/">
+          <button className={styles.button}>Cancel</button>
+        </Link>
+        <button disabled={isFormInvalid()} className={styles.primaryButton}>
           Sign Up
         </button>
-        <Link to="/">
-          <button>Cancel</button>
-        </Link>
       </div>
     </form>
   )

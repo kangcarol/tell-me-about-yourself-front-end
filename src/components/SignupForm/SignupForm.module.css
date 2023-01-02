@@ -1,16 +1,45 @@
 .container {
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: center;
-  align-items: flex-start;
-  margin-bottom: 50px;
+  display: grid;
+  grid-column-start: 1;
+  grid-template-rows: repeat(10, 5vmin);
+  grid-template-columns: 50% 50%;
+  grid-gap: 3%;
 }
 
 .label,
-.button {
-  margin-right: .5rem;
+.button, .primaryButton {
+  margin-right: 0.5rem;
+  width: 80px;
+  font-weight: 500;
+  color: var(--primary);
+}
+
+.label {
+  width: fit-content;
+}
+
+.primaryButton {
+  background-color: var(--primary);
+  color: white;
+}
+
+.container > div > input, textarea {
+  border: none;
+  border-radius: 5px;
+  background-color:white;
+  margin: 5% 0;
+  width: 95%;
+
+}
+
+.label {
+  margin: 5% 0;
 }
 
 .inputContainer {
-  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: row;
+  /* border: 1px red solid; */
+  margin-bottom: 6rem;
+
 }

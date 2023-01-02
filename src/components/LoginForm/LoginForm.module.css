@@ -7,15 +7,24 @@
 }
 
 .label,
-.button {
+.button, .primaryButton {
   margin-right: 0.5rem;
+  width: 80px;
+  font-weight: 500;
+  color: var(--primary);
 }
 
-input {
+.primaryButton {
+  background-color: var(--primary);
+  color: white;
+}
+
+.container > div > input {
   border: none;
   border-radius: 5px;
-  background-color: rgb(230, 227, 227);
+  background-color: white;
   margin: 5% 0;
+  width: 95%;
 }
 
 .label {

@@ -9,5 +9,11 @@
 .container h4 {
   width: 50%;
   font-size: 1.85em;
-  font-weight: 400;
+  font-weight: 300;
+  color: white;
+}
+
+.container span {
+  font-weight: 600;
+  color: var(--secondary);
 }

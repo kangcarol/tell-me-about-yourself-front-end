@@ -10,10 +10,10 @@ const Landing = ({ user }) => {
 
       {user ?  ''
       :
-        <div>
-          <li><Link to="/login">Log In</Link></li>
-          <li><Link to="/signup">Sign Up</Link></li>
-        </div>
+        <>
+          <Link to="/login">Log In</Link>
+          <Link to="/signup">Sign Up</Link>
+        </>
       }
 
     </main>
