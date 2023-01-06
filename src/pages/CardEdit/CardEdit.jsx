@@ -49,6 +49,16 @@ const CardEdit = (props) => {
           placeholder="Question..."
           onChange={handleChange}
         />
+        <label htmlFor="text-input">Hint</label>
+        <textarea
+          required
+          type="text"
+          name="hint"
+          id="hint-input"
+          value={form.hint}
+          placeholder="Hint..."
+          onChange={handleChange}
+        />
         <label htmlFor="text-input">Answer</label>
         <textarea
           required

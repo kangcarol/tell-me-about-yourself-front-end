@@ -32,6 +32,7 @@ const CardDetails = (props) => {
           <h2>{card.text}</h2>
           <details>
             <summary>Need some help?</summary>
+            <p>{card.hint}</p>
           </details>
           <details>
             <summary>Answer</summary>

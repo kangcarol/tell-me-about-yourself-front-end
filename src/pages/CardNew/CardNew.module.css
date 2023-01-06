@@ -7,6 +7,7 @@
   padding: 0 8px;
   border-radius: 5px;
   border: none;
+  width: 100%;
 }
 
 .container textarea {
@@ -19,6 +20,7 @@
   border-radius: 5px;
   border: none;
   font-family:  'Albert Sans', sans-serif;
+  width: 100%;
 }
 
 .container label {
@@ -28,6 +30,7 @@
 
 .container select {
   margin: 0;
+  width: 100%;
 }
 
 input:focus, select:focus, textarea:focus {
