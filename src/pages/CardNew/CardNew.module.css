@@ -5,6 +5,8 @@
   font-size: 16px;
   background-color: white;
   padding: 0 8px;
+  border-radius: 5px;
+  border: none;
 }
 
 .container textarea {
