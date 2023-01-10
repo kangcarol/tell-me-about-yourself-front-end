@@ -5,6 +5,7 @@
   grid-template-rows: repeat(10, 5vmin);
   grid-template-columns: 50% 50%;
   grid-gap: 3%;
+  justify-items: start;
 }
 
 .label,
@@ -24,13 +25,18 @@
   color: white;
 }
 
+.container > div {
+  width: 100%;
+
+}
+
 .container > div > input, textarea {
   border: none;
   border-radius: 5px;
   background-color:white;
   margin: 5% 0;
   width: 95%;
-
+  min-height: 22px;
 }
 
 .label {
