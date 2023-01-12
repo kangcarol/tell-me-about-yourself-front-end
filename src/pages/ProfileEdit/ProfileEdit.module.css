@@ -1,0 +1,58 @@
+
+.container h1 {
+  color: var(--secondary);
+}
+
+.container > form{
+  display: grid;
+  grid-column-start: 1;
+  grid-template-rows: repeat(7, 5vmin);
+  grid-template-columns: 50% 50%;
+  grid-gap: 3%;
+  justify-items: start;
+}
+
+.label,
+.button, .primaryButton {
+  margin-right: 0.5rem;
+  width: 80px;
+  font-weight: 500;
+  color: var(--primary);
+}
+
+.label {
+  width: fit-content;
+}
+
+.primaryButton {
+  background-color: var(--primary);
+  color: white;
+}
+
+.container > div {
+  width: 100%;
+
+}
+
+.container > div > input, textarea {
+  border: none;
+  border-radius: 5px;
+  background-color:white;
+  margin: 5% 0;
+  width: 95%;
+  min-height: 22px;
+  color: var(--primary);
+  font-family: 'Poppins', sans-serif;
+}
+
+.label {
+  margin: 5% 0;
+}
+
+.inputContainer {
+  display: flex;
+  flex-direction: row;
+  /* border: 1px red solid; */
+  margin-bottom: 6rem;
+
+}

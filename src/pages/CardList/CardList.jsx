@@ -5,7 +5,7 @@ import Icon from '../../components/Icon/Icon.jsx'
 const CardList = (props) => {
   console.log("cardlist props:" , props)
 
-  const categoryArr = ['Behavioral', 'CS', 'Javascript', 'Frontend', 'React', 'Styling', 'Python', 'Databases', 'Backend', 'Other']
+  const categoryArr = ['Behavioral',   'Frontend', 'Backend','Javascript', 'Python', 'CS','Other']
 
   return (
     <main className={styles.container}>

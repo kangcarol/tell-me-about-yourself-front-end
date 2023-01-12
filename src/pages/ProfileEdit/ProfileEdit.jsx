@@ -34,19 +34,10 @@ const ProfileEdit = (props) => {
       onSubmit={handleSubmit}
       className={styles.container}
     >
-      {/* <div className={styles.inputContainer}>
-        <label htmlFor="name" className={styles.label}>Name</label>
-        <input
-          type="text"
-          autoComplete="off"
-          id="name"
-          value={form.name}
-          name="name"
-          onChange={handleChange}
-        />
-      </div> */}
       <div className={styles.inputContainer}>
-        <label htmlFor="about" className={styles.label}>Tell Me About Yourself</label>
+        <label htmlFor="about" className={styles.label}>About</label>
+      </div>
+      <div>
         <input
           type="text"
           autoComplete="off"
@@ -58,6 +49,8 @@ const ProfileEdit = (props) => {
       </div>
       <div className={styles.inputContainer}>
         <label htmlFor="linkedin" className={styles.label}>LinkedIn</label>
+      </div>
+      <div>
         <input
           type="text"
           autoComplete="off"
@@ -69,6 +62,8 @@ const ProfileEdit = (props) => {
       </div>
       <div className={styles.inputContainer}>
         <label htmlFor="email" className={styles.label}>Email</label>
+      </div>
+      <div>
         <input
           type="text"
           autoComplete="off"
@@ -80,6 +75,8 @@ const ProfileEdit = (props) => {
       </div>
       <div className={styles.inputContainer}>
         <label htmlFor="password" className={styles.label}>Password</label>
+      </div>
+      <div>
         <input
           type="password"
           autoComplete="off"
@@ -93,6 +90,8 @@ const ProfileEdit = (props) => {
         <label htmlFor="confirm" className={styles.label}>
           Confirm Password
         </label>
+      </div>
+      <div>
         <input
           type="password"
           autoComplete="off"
@@ -113,13 +112,14 @@ const ProfileEdit = (props) => {
           onChange={handleChangePhoto}
         />
       </div> */}
+      <div></div>
       <div className={styles.inputContainer}>
-        <button disabled={isFormInvalid()} className={styles.button}>
-          update
-        </button>
         <Link to="/">
           <button>Cancel</button>
         </Link>
+        <button disabled={isFormInvalid()} className={styles.button}>
+          Update
+        </button>
       </div>
     </form>
   </main>

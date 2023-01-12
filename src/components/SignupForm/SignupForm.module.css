@@ -37,6 +37,8 @@
   margin: 5% 0;
   width: 95%;
   min-height: 22px;
+  color: var(--primary);
+  font-family: 'Poppins', sans-serif;
 }
 
 .label {

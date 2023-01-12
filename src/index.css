@@ -107,6 +107,7 @@ form {
 
 form > input {
   min-height: 25px;
+  color: var(--primary);
 }
 
 select {
