@@ -1,6 +1,7 @@
 .container {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .container > div {
@@ -8,7 +9,8 @@
   flex-direction: row;
   align-items: flex-start;
   justify-content: flex-start;
-  width: 100%;
+  width: fit-content;
+  min-width: 60%;
   margin: 2%;
   padding: 2%;
   border-radius: 10px;
@@ -41,8 +43,8 @@
   margin: 0 0 5px 0;
 }
 
-.container > h1 {
-  color: var(--secondary);
+h1 {
+  color: var(--primary);
   text-align: center;
 }
 
