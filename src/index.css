@@ -51,7 +51,7 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-top: 10%;
+  padding-top: 8%;
   width: 80%;
 }
 
@@ -113,7 +113,7 @@ form > input {
   background-color:white;
   margin: 5% 0;
   width: 95%;
-  min-height: 22px;
+  /* min-height: 22px; */
   color: var(--primary);
   font-family: 'Poppins', sans-serif;
 }
