@@ -8,13 +8,13 @@ const Landing = ({ user }) => {
       <h1>Hello, {user ? user.name : 'Friend'}</h1>
       <img src={Logo} alt="logo" />
 
-      {user ?  ''
+      {/* {user ?  ''
       :
         <>
           <Link to="/login">Log In</Link>
           <Link to="/signup">Sign Up</Link>
         </>
-      }
+      } */}
 
     </main>
   )

@@ -1,8 +1,8 @@
-import styles from './CardList.module.css'
+import styles from './CardsRandom.module.css'
 import Card from '../../components/Card/Card'
 import Icon from '../../components/Icon/Icon.jsx'
 
-const CardList = (props) => {
+const CardsRandom = (props) => {
   console.log("cardlist props:" , props)
 
   const categoryArr = ['Behavioral', 'Frontend', 'Backend','Javascript', 'Python', 'CS','Other']
@@ -31,6 +31,6 @@ const CardList = (props) => {
   )
 }
 
-export default CardList
+export default CardsRandom
 
 

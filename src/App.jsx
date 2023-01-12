@@ -13,6 +13,7 @@ import ProfileEdit from './pages/ProfileEdit/ProfileEdit'
 import ChangePassword from './pages/ChangePassword/ChangePassword'
 
 import CardList from './pages/CardList/CardList'
+import CardsRandom from './pages/CardsRandom/CardsRandom'
 import CardNew from './pages/CardNew/CardNew'
 import CardDetails from './pages/CardDetails/CardDetails'
 import CardEdit from './pages/CardEdit/CardEdit'
@@ -34,7 +35,7 @@ const App = () => {
   const [cards,setCards] = useState([])
   const [profiles, setProfiles] = useState([])
   const [favorites, setFavorites] = useState([])
-  const [categoryCards, setCategoryCards] = useState([])
+  // const [categoryCards, setCategoryCards] = useState([])
 
   const navigate = useNavigate()
 
@@ -46,6 +47,7 @@ const App = () => {
 
   const handleSignupOrLogin = () => {
     setUser(authService.getUser())
+    // navigate('/cardsrandom')
   }
 
   const handleAddFavorites = (addedCard) => {
@@ -139,6 +141,20 @@ const App = () => {
           element={
             <ProtectedRoute user={user}>
               <CardList
+              card={cards}
+              favorites={favorites}
+              handleAddFavorites={handleAddFavorites}
+              handleRemoveFavorites={handleRemoveFavorites}
+              // handleChooseCategory={handleChooseCategory}
+              />
+            </ProtectedRoute>
+          }
+        />
+        <Route
+          path="/cardsrandom"
+          element={
+            <ProtectedRoute user={user}>
+              <CardsRandom
               card={cards}
               favorites={favorites}
               handleAddFavorites={handleAddFavorites}
