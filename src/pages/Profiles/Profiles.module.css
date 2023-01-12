@@ -26,6 +26,7 @@
   justify-content: flex-start;
   align-items: flex-start;
   width: 40%;
+  min-width: 260px;
   height: 380px;
   margin: 2%;
   padding: 2%;
@@ -72,9 +73,14 @@
   /* padding-right: 10px;; */
 }
 
+.container h2 {
+  color: var(--primary);
+}
+
 .container > div:last-child {
   display: flex;
-  justify-content: center;
+  justify-content: start;
+  align-items: flex-start;
   overflow:scroll;
   scroll-snap-type: y mandatory;
 }
@@ -83,7 +89,7 @@
   font-size: 16px;
   font-weight: 300;
   margin: 0;
-  padding: 30% 0;
+  padding: 3% 0;
   line-height: 1.25rem;
   display: -webkit-box;
   -webkit-line-clamp: 12;

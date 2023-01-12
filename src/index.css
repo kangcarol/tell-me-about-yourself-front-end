@@ -87,6 +87,11 @@ a:hover {
   font-weight: 600;
 }
 
+a:focus {
+  color: var(--hover);
+  font-weight: 600;
+}
+
 li {
   list-style: none;
 }
