@@ -48,7 +48,5 @@
 .inputContainer {
   display: flex;
   flex-direction: row;
-  /* border: 1px red solid; */
   margin-bottom: 6rem;
-
 }

@@ -8,6 +8,7 @@ const SignupForm = props => {
   const [formData, setFormData] = useState({
     name: '',
     about: '',
+    linkedin:'',
     email: '',
     password: '',
     passwordConf: '',

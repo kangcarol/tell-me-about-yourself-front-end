@@ -29,7 +29,7 @@ const ProfileDetails = (props) => {
   return (
     <main className={styles.container}>
 
-        <header className={styles.container}>
+        <div className={styles.container}>
             {profile.photo ?
             <img src={profile.photo} alt="User's avatar"/>
             :
@@ -46,10 +46,10 @@ const ProfileDetails = (props) => {
             </div>
               <Link to={`/profiles/${id}/edit`} state={profile}>Edit</Link>
           </section>
-        </header>
-
+        </div>
+        
+        <h1>BOOKMARKS</h1>
         <article className={styles.container} >
-          <h1>BOOKMARKS</h1>
           
           {props.favorites.map((card) => (
             <div className={styles.card}>
