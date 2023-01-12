@@ -1,9 +1,14 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
 .container h1 {
   color: var(--secondary);
 }
 
-.container > form{
+.container form{
   display: grid;
   grid-column-start: 1;
   grid-template-rows: repeat(7, 5vmin);
@@ -29,12 +34,11 @@
   color: white;
 }
 
-.container > div {
+div {
   width: 100%;
-
 }
 
-.container > div > input, textarea {
+div > input, textarea {
   border: none;
   border-radius: 5px;
   background-color:white;
@@ -49,10 +53,3 @@
   margin: 5% 0;
 }
 
-.inputContainer {
-  display: flex;
-  flex-direction: row;
-  /* border: 1px red solid; */
-  margin-bottom: 6rem;
-
-}

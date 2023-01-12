@@ -9,8 +9,8 @@ const NavBar = ({ user, handleLogout }) => {
   const publicLinks = (
     <ul>
       <li><Link to="/about">ABOUT</Link></li>
-      {/* <li><Link to="/login">LOG IN</Link></li>
-      <li><Link to="/signup">SIGN UP</Link></li> */}
+      <li><Link to="/login">LOG IN</Link></li>
+      <li><Link to="/signup">SIGN UP</Link></li>
     </ul>
   )
 

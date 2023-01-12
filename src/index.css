@@ -108,6 +108,14 @@ form {
 form > input {
   min-height: 25px;
   color: var(--primary);
+  border: none;
+  border-radius: 5px;
+  background-color:white;
+  margin: 5% 0;
+  width: 95%;
+  min-height: 22px;
+  color: var(--primary);
+  font-family: 'Poppins', sans-serif;
 }
 
 select {
