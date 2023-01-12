@@ -81,7 +81,7 @@ const CardNew = (props) => {
           placeholder="Let's give credit where credit is due!"
           onChange={handleChange}
         />
-        <button type="submit">Submit</button>
+        <button type="submit" className={styles.primaryButton}>Submit</button>
 
       </form>
     </main>

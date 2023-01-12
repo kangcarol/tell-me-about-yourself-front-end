@@ -34,7 +34,7 @@ body {
   --primary: rgb(12, 115, 241);
   --secondary: rgb(247, 228, 79);
   --fontcolor: white;
-  --hover: palegreen;
+  --hover: rgb(247, 228, 79);
   --boxcolor:  rgb(228, 225, 225);
 
 }
