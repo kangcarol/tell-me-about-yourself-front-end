@@ -39,22 +39,24 @@
 
 .container > div:first-child {
   display: flex;
-  height: 80px;
-  padding-bottom: 20px;
+  height: 65px;
+  /* padding-bottom: 10px; */
+  /* background-color: white; */
 }
 
 .container > div:first-child > span{
   display: flex;
   flex-direction: column;
+  margin: 0;
 }
 
-.container > div:first-child > span > h2, h4 {
+.container > div:first-child > span > h2, a {
   margin: 0 0 0 15px;
 }
 
 .container a {
   font-weight: 400;
-  font-size: .8em;
+  font-size: .9em;
   margin: 0 0 0 15px;
 }
 
@@ -70,7 +72,6 @@
 .container > div > h2 {
   margin: 0 0 0 10px;
   font-size: 1.35em;
-  /* padding-right: 10px;; */
 }
 
 .container h2 {
@@ -79,7 +80,7 @@
 
 .container > div:last-child {
   display: flex;
-  justify-content: start;
+  justify-content: flex-start;
   align-items: flex-start;
   overflow:scroll;
   scroll-snap-type: y mandatory;
@@ -89,7 +90,7 @@
   font-size: 16px;
   font-weight: 300;
   margin: 0;
-  padding: 3% 0;
+  padding: 3%;
   line-height: 1.25rem;
   display: -webkit-box;
   -webkit-line-clamp: 12;

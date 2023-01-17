@@ -17,7 +17,7 @@ const CardList = (props) => {
               <Icon category={c}/>
               <h1>{c.toUpperCase()}</h1>
             </summary>
-            {props.card.map((card) => (
+            {props.cards.map((card) => (
               (card.category === c) ?
               <Card card={card} handleAddFavorites={props.handleAddFavorites} handleRemoveFavorites={props.handleRemoveFavorites}key={card._id} />
               :

@@ -7,6 +7,13 @@ const CardsRandom = (props) => {
 
   const categoryArr = ['Behavioral', 'Frontend', 'Backend','Javascript', 'Python', 'CS','Other']
 
+  // const cardsOfCategory = props.cards.filter(card => card.category === categoryArr[0])
+
+// return random card of that category
+// cards of that category[Math.floor(Math.random() * cards of that category length)]
+
+//to get cards of that category >>>> cards.count(card => card.category === c)
+
   return (
     <main className={styles.container}>
 
@@ -17,12 +24,14 @@ const CardsRandom = (props) => {
               <Icon category={c}/>
               <h1>{c.toUpperCase()}</h1>
             </summary>
-            {props.card.map((card) => (
+            {props.cards.map((card) => (
               (card.category === c) ?
               <Card card={card} handleAddFavorites={props.handleAddFavorites} handleRemoveFavorites={props.handleRemoveFavorites}key={card._id} />
               :
               ''
             ))}
+
+
           </details>
         </section>
       )} 

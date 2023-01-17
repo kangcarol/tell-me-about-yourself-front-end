@@ -6,8 +6,8 @@ main {
 }
 
 .container > section {
-  width: 180px;
-  height: 180px;
+  min-width: 50%;
+  /* height: 180px; */
   padding: 2%;
   margin: 10px;
   border-radius: 10px;

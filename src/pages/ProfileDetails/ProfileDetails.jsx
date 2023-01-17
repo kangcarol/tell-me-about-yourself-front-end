@@ -48,11 +48,12 @@ const ProfileDetails = (props) => {
           </section>
         </div>
         
-        <h1>BOOKMARKS</h1>
         <article className={styles.container} >
+        <h1>BOOKMARKS</h1>
           
           {props.favorites.map((card) => (
             <div className={styles.card}>
+              <h4>{card.category.toUpperCase()}</h4>
               <Card favortites={true} card={card} handleAddFavorites={props.handleAddFavorites} handleRemoveFavorites={props.handleRemoveFavorites}key={card._id} />
             </div>
             

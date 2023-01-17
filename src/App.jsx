@@ -47,16 +47,17 @@ const App = () => {
 
   const handleSignupOrLogin = () => {
     setUser(authService.getUser())
-    // navigate('/cardsrandom')
   }
 
   const handleAddFavorites = (addedCard) => {
-    setFavorites([addedCard, ...favorites])
+    if (!favorites.includes(addedCard)) {
+      setFavorites([addedCard, ...favorites])
+    }
     navigate(`/profiles/${user.profile}`)
   }
 
   const handleRemoveFavorites = (removeCard) => {
-    setFavorites(cards.filter(c => c._id !== removeCard._id))
+    setFavorites(favorites.splice(favorites.indexOf(removeCard),1))
     navigate(`/profiles/${user.profile}`)
   }
 
@@ -141,7 +142,7 @@ const App = () => {
           element={
             <ProtectedRoute user={user}>
               <CardList
-              card={cards}
+              cards={cards}
               favorites={favorites}
               handleAddFavorites={handleAddFavorites}
               handleRemoveFavorites={handleRemoveFavorites}
@@ -155,7 +156,7 @@ const App = () => {
           element={
             <ProtectedRoute user={user}>
               <CardsRandom
-              card={cards}
+              cards={cards}
               favorites={favorites}
               handleAddFavorites={handleAddFavorites}
               handleRemoveFavorites={handleRemoveFavorites}

@@ -40,12 +40,14 @@
 
 .container > div > section > h1, h4, a {
   font-size: 1.25em;
-  margin: 0 0 5px 0;
+  margin: 0 0 5px 5px;
+
 }
 
 h1 {
   color: var(--primary);
   text-align: center;
+  margin: 2% 0;
 }
 
 .container > div > section > div {
@@ -65,6 +67,7 @@ h1 {
   -webkit-box-orient: vertical;
   scroll-snap-align: start;
   margin: 4px 0 0px 0;
+  padding: 3% 0;
 }
 
 .container > header > section > div > p:hover {
@@ -77,12 +80,11 @@ h1 {
   justify-content: flex-start;
 }
 
-.container > article {
+.container > article  {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-top: 25%;
 }
 
 .card article {
