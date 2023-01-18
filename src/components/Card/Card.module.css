@@ -1,11 +1,9 @@
 article {
   display: flex;
   flex-direction: row;
-  align-items: center;
-  /* width: 100%; */
   padding: 2% 0;
 }
-/* 
+
 .container > button {
   border-radius: 5px;
   border: none;
@@ -16,14 +14,14 @@ article {
   align-items: center;
   font-weight: bold;
   padding: 0;
-  width: 50px;
-} */
+  width: 30px;
+}
 
-/* .container > summary > img {
+.container > summary > img {
   background: none;
   border: none;
-  width: 40px;
-} */
+  /* width: 40px; */
+}
 
 .container > button > img:hover {
   background-color: var(--hover);
@@ -37,9 +35,13 @@ article {
   font-size: 1rem;
 }
 
+.container > article > a {
+  /* width: 70%; */
+}
+
 .container > article > h2 {
   font-size: 15px;
-  font-weight: 400;
+  font-weight: 300;
   margin: 0;
   line-height: 1.25rem;
   display: -webkit-box;

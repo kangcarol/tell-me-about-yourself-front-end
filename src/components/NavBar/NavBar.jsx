@@ -1,10 +1,11 @@
-import { Link, useLocation } from 'react-router-dom'
+import { Link, useLocation, useNavigate } from 'react-router-dom'
 import styles from './NavBar.module.css'
 import Logo from '../../assets/branding/logo.svg'
 
 const NavBar = ({ user, handleLogout }) => {
 
   const location = useLocation()
+  const navigate = useNavigate()
 
   const publicLinks = (
     <ul>
@@ -27,12 +28,14 @@ const NavBar = ({ user, handleLogout }) => {
   )
 
   return (
+  
     <header className={styles.container}>
-      {(location.pathname !==  '/' || location.pathname ===  '/login' || location.pathname ===  '/signup') ?  <Link to={'/'}><img src={Logo} alt="logo" /></Link> : <span>''</span>}
       <nav>
+      {(location.pathname !==  '/' || location.pathname ===  '/login' || location.pathname ===  '/signup') ? <Link to="/"><img src={Logo} alt="logo"/></Link> : <span>''</span>}
         {user ? protectedLinks : publicLinks}
       </nav>
     </header>
+  
   )
 }
 

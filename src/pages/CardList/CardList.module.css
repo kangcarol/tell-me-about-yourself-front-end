@@ -1,13 +1,14 @@
-main {
-  width: 65%;
+/* main {
+  width: 600px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-}
+} */
 
 .container > section {
-  width: 400px;
-  min-height: 100px;
+  width: 500px;
+  /* height: fit-content; */
+  min-height: 00px;
   padding: 2%;
   margin: 10px;
   border-radius: 10px;
@@ -20,6 +21,14 @@ main {
   background-color:white;
 }
 
+.container a {
+  width: 50px;
+}
+
+.container h2 {
+  width: 450px;
+}
+
 .container div {
   display: flex;
   flex-direction: row;
@@ -30,9 +39,9 @@ main {
 .container summary {
   display: flex;
   flex-direction: row;
-  /* justify-content: center; */
   align-items: center;
 }
+
 
 .container summary > img {
   width: 60px;

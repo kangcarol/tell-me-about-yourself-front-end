@@ -9,10 +9,10 @@ const Card = (props) => {
   const location = useLocation()
   return (
     <>
-      {/* <div  className={styles.icon}>
-        <Icon category={props.card.category} />
-        <h2>{props.card.category}</h2>
-      </div> */}
+      {/* <div  className={styles.icon}> */}
+        {/* <Icon category={props.card.category} /> */}
+        {/* <h2>{props.card.category}</h2> */}
+      {/* </div> */}
         <article className={styles.container}>
           
           {(location.pathname ==='/cards') || (location.pathname !=='/cards' && props.favorites===false) ?

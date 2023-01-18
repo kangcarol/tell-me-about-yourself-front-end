@@ -20,11 +20,16 @@
   -webkit-box-shadow: -1px 5px 19px -5px var(--primary);
 }
 
+.container h2 {
+  color: var(--primary);
+  margin: 0;
+}
+
 .container > div > section {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  width: 100%;
+  width: 75%;
   padding-left: 5%;
 }
 
@@ -40,12 +45,12 @@
 
 .container > div > section > h1, h4, a {
   font-size: 1.25em;
-  margin: 0 0 5px 5px;
-
+  margin: 0 0 5px 0px;
+  align-items: baseline;
 }
 
 h1 {
-  color: var(--primary);
+  color: var(--secondary);
   text-align: center;
   margin: 2% 0;
 }
@@ -54,6 +59,7 @@ h1 {
   overflow: scroll;
   scroll-snap-type: y mandatory;
   margin-bottom: 10px;
+  width: 100%;
 }
 
 .container > div > section > div > p {
@@ -66,8 +72,9 @@ h1 {
   text-overflow: ellipsis;
   -webkit-box-orient: vertical;
   scroll-snap-align: start;
-  margin: 4px 0 0px 0;
+  margin: 0;
   padding: 3% 0;
+
 }
 
 .container > header > section > div > p:hover {
@@ -87,6 +94,16 @@ h1 {
   align-items: center;
 }
 
+.card article{
+  padding: 0;
+  margin-left: 10px;
+}
+
+
+.container div {
+  width: 600px;
+}
+
 .card article {
   display: flex;
   flex-direction: row;
@@ -96,8 +113,4 @@ h1 {
   font-weight: 400;
   font-size: .9em;
 }
-/* 
-.container a:last-child {
-  font-weight: 400;
-  font-size: 1em;
-} */
+

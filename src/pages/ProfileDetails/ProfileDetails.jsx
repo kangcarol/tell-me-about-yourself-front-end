@@ -36,13 +36,13 @@ const ProfileDetails = (props) => {
             <img src={ProfileIcon} alt="Default avatar"/>}
           
           <section>
-            <h1>{profile.name.toUpperCase()}</h1>
+            <h2 className={styles.container}>{profile.name.toUpperCase()}</h2>
             {(profile.linkedin) ?
                 <h4><a href={profile.linkedin} rel= "noreferrer" target="_blank">LinkedIn</a></h4>
                 :
                 ''}
             <div>
-              <p>{profile.about}</p>
+              <p className={styles.container}>{profile.about}</p>
             </div>
               <Link to={`/profiles/${id}/edit`} state={profile}>Edit</Link>
           </section>
@@ -51,8 +51,8 @@ const ProfileDetails = (props) => {
         <article className={styles.container} >
         <h1>BOOKMARKS</h1>
           
-          {props.favorites.map((card) => (
-            <div className={styles.card}>
+          {props.favorites.map((card, idx) => (
+            <div className={styles.card} key={idx}>
               <h4>{card.category.toUpperCase()}</h4>
               <Card favortites={true} card={card} handleAddFavorites={props.handleAddFavorites} handleRemoveFavorites={props.handleRemoveFavorites}key={card._id} />
             </div>

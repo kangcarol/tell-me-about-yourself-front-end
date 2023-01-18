@@ -51,7 +51,7 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-top: 8%;
+  margin-top: 200px;
   width: 80%;
 }
 
