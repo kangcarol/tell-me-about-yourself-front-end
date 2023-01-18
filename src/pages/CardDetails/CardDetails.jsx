@@ -26,7 +26,7 @@ const CardDetails = (props) => {
 
   return (
     <main className={styles.container}>
-        <h1>{card.category.toUpperCase()}</h1>
+        <h1 className={styles.container}>{card.category.toUpperCase()}</h1>
       <article>
         <section>
           <h2>{card.text}</h2>
@@ -43,7 +43,7 @@ const CardDetails = (props) => {
             <AuthorInfo content={card} />
             {card.author._id === props.user.profile && 
               <span>
-                <button><Link to={`/cards/${id}/edit`} state={card}>Edit</Link></button>
+                <button className={styles.primaryButton}><Link to={`/cards/${id}/edit`} state={card}>Edit</Link></button>
                 <button onClick={() => props.handleDeleteCard(id)}>Delete</button>
               </span>
             }

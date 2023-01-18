@@ -49,7 +49,7 @@ const ProfileDetails = (props) => {
         </div>
         
         <article className={styles.container} >
-        <h1>BOOKMARKS</h1>
+        <h1 className={styles.container}>BOOKMARKS</h1>
           
           {props.favorites.map((card, idx) => (
             <div className={styles.card} key={idx}>

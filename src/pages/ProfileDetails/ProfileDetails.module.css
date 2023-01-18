@@ -49,7 +49,7 @@
   align-items: baseline;
 }
 
-h1 {
+.container > h1 {
   color: var(--secondary);
   text-align: center;
   margin: 2% 0;

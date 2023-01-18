@@ -54,6 +54,7 @@ img {
   font-style: normal;
   font-size: 1em;
   margin: 0;
+  color: white;
 }
 
 .container button:hover {
@@ -69,4 +70,15 @@ img {
   justify-content: space-between;
   align-items: center;
   padding-top: 10px;
+}
+
+.container h1 {
+  color: var(--primary);
+}
+
+.primaryButton {
+  background-color: var(--primary);
+  color: white;
+  width: 80px;
+  font-weight: 500;
 }

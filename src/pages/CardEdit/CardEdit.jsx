@@ -80,7 +80,7 @@ const CardEdit = (props) => {
           onChange={handleChange}
         />
         <label htmlFor="category-input">Category</label>
-        <button type="submit">Submit</button>
+        <button type="submit" className={styles.primaryButton}> Submit</button>
       </form>
     </main>
   )

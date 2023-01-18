@@ -26,7 +26,8 @@
 }
 
 .container h2 {
-  width: 450px;
+  width: 425px;
+  margin-left: 10px;
 }
 
 .container div {
