@@ -10,6 +10,7 @@ nav {
   display: flex;
   align-items: center;
   padding: .5% 3%;
+  background-color: rgb(14, 0, 66);
 }
 
 nav > ul {

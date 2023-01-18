@@ -13,7 +13,7 @@ const Card = (props) => {
         <Icon category={props.card.category} />
         <h2>{props.card.category}</h2>
       </div> */}
-        {/* <article className={styles.container}> */}
+        <article className={styles.container}>
           
           {(location.pathname ==='/cards') || (location.pathname !=='/cards' && props.favorites===false) ?
 
@@ -28,10 +28,10 @@ const Card = (props) => {
           }
 
           <Link to={`/cards/${props.card._id}`} className={styles.container}>
-              <h4 className={styles.container}>{props.card.text.toUpperCase()}</h4>
+              <h2 className={styles.container}>{props.card.text.toUpperCase()}</h2>
           </Link>
 
-        {/* </article> */}
+        </article>
     </>
   )
 }

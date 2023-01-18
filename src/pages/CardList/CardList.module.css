@@ -6,8 +6,8 @@ main {
 }
 
 .container > section {
-  min-width: 50%;
-  /* height: 180px; */
+  width: 400px;
+  min-height: 100px;
   padding: 2%;
   margin: 10px;
   border-radius: 10px;
@@ -15,9 +15,9 @@ main {
   -moz-box-shadow: -1px 5px 19px -5px rgba(0,0,0,0.25);
   -webkit-box-shadow: -1px 5px 19px -5px rgba(0,0,0,0.25);
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
-  background-color:rgb(231, 230, 230);
+  background-color:white;
 }
 
 .container div {
@@ -29,20 +29,21 @@ main {
 
 .container summary {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   /* justify-content: center; */
   align-items: center;
 }
 
 .container summary > img {
   width: 60px;
-  /* padding-right: 10px; */
+  /* background-color: var(--primary); */
+  padding: 10px;
   /* border: 1px solid red; */
 }
 
 .container h1 {
   color: black;
-  font-size: 1em;
+  font-size: 1.5em;
   font-weight: 500;
   width: fit-content;
   margin: 10%;
