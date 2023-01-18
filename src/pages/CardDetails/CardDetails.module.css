@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 54%;
+  width: 56%;
   border-radius: 10px;
   background-color: rgb(245, 243, 243);
   box-shadow: -1px 10px 19px -5px rgba(0,0,0,0.25);
@@ -10,13 +10,13 @@
   -webkit-box-shadow: -1px 5px 19px -5px rgba(0,0,0,0.25);
 }
 
-img {
-  width: 20%;
+.container img {
+  width: 32px;
 }
 
 .container h1 {
   background-color: var(--secondary);
-  width: 35%;
+  width: 36.4%;
   border-radius:10px 10px 0 0;
   text-align: center;
   margin: 0;

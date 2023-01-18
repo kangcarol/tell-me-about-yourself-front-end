@@ -14,8 +14,8 @@
 
 .container > img {
   border-radius: 50%;
-  width: 32px;
-  height: 32px;
+  min-width: 18px;
+  min-height: 18px;
 }
 
 .container > div > h4 {
