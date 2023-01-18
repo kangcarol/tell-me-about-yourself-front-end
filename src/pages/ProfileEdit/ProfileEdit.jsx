@@ -28,7 +28,7 @@ const ProfileEdit = (props) => {
 
   return (
     <main className={styles.container}>
-      <h1>Edit for {form.name}</h1>
+      {/* <h1>Edit for {form.name}</h1> */}
       <form
         autoComplete="off"
         onSubmit={handleSubmit}

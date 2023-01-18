@@ -25,7 +25,7 @@ const Profiles = () => {
 
               <div>
               {(profile.photo) ?
-                <img src={profile.photo} alt="avatar"/>
+                <img className={styles.container} src={profile.photo} alt="avatar"/>
                 :
                 <img src={ProfileIcon} alt="avatar"/>
               }
