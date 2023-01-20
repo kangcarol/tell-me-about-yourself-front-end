@@ -220,6 +220,7 @@ const App = () => {
             <ProtectedRoute user={user}>
               <ProfileEdit 
               user={user}
+              profiles={profiles}
               handleUpdateProfile={handleUpdateProfile}
               />
             </ProtectedRoute>
