@@ -25,7 +25,7 @@ const ProfileEdit = (props) => {
     e.preventDefault()
     try {
       await profileService.update( props.profile, form, photoData.photo)
-      navigate('/')
+      navigate(`/profiles/${props.user.profile}`)
     } catch (err) {
       console.log(err.message)
     }

@@ -34,7 +34,7 @@ const show = async (id) => {
 
 const update = async (id,profileData, photo) => {
   try {
-    const res = await fetch(`${BASE_URL}/${id}`, {
+    const res = await fetch(`${BASE_URL}/${profileData._id}`, {
       method: 'PUT',
       headers: {
         'Authorization': `Bearer ${tokenService.getToken()}`,
