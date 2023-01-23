@@ -32,7 +32,7 @@ const show = async (id) => {
 }
 
 
-const update = async (profileData) => {
+const update = async (profileData, photo) => {
   try {
     const res = await fetch(`${BASE_URL}/${profileData._id}`, {
       method: 'PUT',
@@ -42,6 +42,17 @@ const update = async (profileData) => {
       },
       body: JSON.stringify(profileData)
     })
+    const json = await res.json()
+    if (json.err){
+      throw new Error(json.err)
+    } else if (photo) {
+      const photoData = new FormData()
+      photoData.append('photo',photo)
+      return await addPhoto(
+        photoData,
+        tokenService.getUserFromToken().profile
+      )
+    }
     return res.json()
   } catch (error) {
     console.log(error)

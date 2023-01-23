@@ -1,12 +1,15 @@
 import { useState } from "react"
-import { useLocation, Link } from "react-router-dom"
+import { useLocation, Link, useNavigate } from "react-router-dom"
 import styles from './ProfileEdit.module.css'
+import * as profileService from '../../services/profileService'
 
 const ProfileEdit = (props) => {
   const { state } = useLocation()
   const [form, setForm] = useState(state)
   const [photoData, setPhotoData] = useState({})
+  const navigate = useNavigate()
 
+  console.log("PROPS", props)
   console.log(state)
   
   const handleChange = ({ target }) => {
@@ -17,10 +20,28 @@ const ProfileEdit = (props) => {
     setPhotoData({ photo: evt.target.files[0] })
   }
 
-  const handleSubmit = (e) => {
+  const handleSubmit =  async (e) => {
     e.preventDefault()
-    props.handleUpdateProfile(form, photoData.photo)
+    try {
+      await profileService.update( props.profile, form, photoData.photo)
+      navigate('/')
+    } catch (err) {
+      console.log(err.message)
+    }
   }
+  //   props.handleUpdateProfile(form, photoData.photo)
+  // }
+
+
+  // const handleSubmit = async e => {
+  //   e.preventDefault()
+  //   try {
+  //     await profileService.update( user.profile, formData, photoData.photo)
+  //     navigate('/')
+  //   } catch (err) {
+  //     console.log(err.message)
+  //   }
+  // }
 
   const isFormInvalid = () => {
     return !(form.name && form.email && form.password && form.password === form.passwordConf)
@@ -101,7 +122,7 @@ const ProfileEdit = (props) => {
             onChange={handleChange}
           />
         </div>
-        {/* <div className={styles.inputContainer}>
+        <div className={styles.inputContainer}>
           <label htmlFor="photo-upload" className={styles.label}>
             Upload Photo
           </label>
@@ -111,7 +132,7 @@ const ProfileEdit = (props) => {
             name="photo"
             onChange={handleChangePhoto}
           />
-        </div> */}
+        </div>
         <div></div>
         <div className={styles.inputContainer}>
           <Link to="/">
