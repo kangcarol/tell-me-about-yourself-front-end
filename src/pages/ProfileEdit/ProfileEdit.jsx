@@ -1,13 +1,14 @@
 import { useState } from "react"
-import { useLocation, Link, useNavigate } from "react-router-dom"
+import { useLocation, useParams, Link, useNavigate } from "react-router-dom"
 import styles from './ProfileEdit.module.css'
 import * as profileService from '../../services/profileService'
 
 const ProfileEdit = (props) => {
   const { state } = useLocation()
   const [form, setForm] = useState(state)
-  const [photoData, setPhotoData] = useState({})
+  const [photoData, setPhotoData] = useState()
   const navigate = useNavigate()
+  const { id } = useParams()
 
   console.log("PROPS", props)
   console.log(state)
@@ -44,7 +45,7 @@ const ProfileEdit = (props) => {
   // }
 
   const isFormInvalid = () => {
-    return !(form.name && form.email && form.password && form.password === form.passwordConf)
+    return !(form.name && form.password && form.password === form.passwordConf)
   }
 
   return (
@@ -78,19 +79,6 @@ const ProfileEdit = (props) => {
             id="linkedin"
             value={form.linkedin}
             name="linkedin"
-            onChange={handleChange}
-          />
-        </div>
-        <div className={styles.inputContainer}>
-          <label htmlFor="email" className={styles.label}>Email</label>
-        </div>
-        <div>
-          <input
-            type="text"
-            autoComplete="off"
-            id="email"
-            value={form.email}
-            name="email"
             onChange={handleChange}
           />
         </div>

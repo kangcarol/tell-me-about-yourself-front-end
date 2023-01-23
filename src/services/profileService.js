@@ -32,9 +32,9 @@ const show = async (id) => {
 }
 
 
-const update = async (profileData, photo) => {
+const update = async (id,profileData, photo) => {
   try {
-    const res = await fetch(`${BASE_URL}/${profileData._id}`, {
+    const res = await fetch(`${BASE_URL}/${id}`, {
       method: 'PUT',
       headers: {
         'Authorization': `Bearer ${tokenService.getToken()}`,
