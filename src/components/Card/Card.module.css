@@ -20,7 +20,9 @@ article {
 .container > summary > img {
   background: none;
   border: none;
-  /* width: 40px; */
+  min-width: 18px;
+  min-height: 18px;
+  padding: 0;
 }
 
 .container > button > img:hover {

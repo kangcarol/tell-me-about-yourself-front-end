@@ -1,6 +1,5 @@
 import styles from './AuthorInfo.module.css'
 import ProfileIcon from '../../assets/icons/profile.png'
-import DateCard from '../DateCard/DateCard'
 
 const AuthorInfo = ({ content }) => {
   const photo = content.author.photo ? content.author.photo : ProfileIcon
@@ -10,7 +9,6 @@ const AuthorInfo = ({ content }) => {
       <div>
         <h4>contributed by</h4>
         <h4>{content.author.name.toUpperCase()}</h4>
-        {/* <DateCard createdAt={content.createdAt} /> */}
       </div>
     </div>
   )
