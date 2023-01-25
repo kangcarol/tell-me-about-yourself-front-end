@@ -6,7 +6,7 @@ import * as profileService from '../../services/profileService'
 const ProfileEdit = (props) => {
   const { state } = useLocation()
   const [form, setForm] = useState(state)
-  const [photoData, setPhotoData] = useState()
+  const [photoData, setPhotoData] = useState(form.photo)
   const navigate = useNavigate()
   const { id } = useParams()
 
@@ -30,19 +30,6 @@ const ProfileEdit = (props) => {
       console.log(err.message)
     }
   }
-  //   props.handleUpdateProfile(form, photoData.photo)
-  // }
-
-
-  // const handleSubmit = async e => {
-  //   e.preventDefault()
-  //   try {
-  //     await profileService.update( user.profile, formData, photoData.photo)
-  //     navigate('/')
-  //   } catch (err) {
-  //     console.log(err.message)
-  //   }
-  // }
 
   const isFormInvalid = () => {
     return !(form.name && form.password && form.password === form.passwordConf)
@@ -50,7 +37,7 @@ const ProfileEdit = (props) => {
 
   return (
     <main className={styles.container}>
-      {/* <h1>Edit for {form.name}</h1> */}
+      <h1>Edit for {form.name}</h1>
       <form
         autoComplete="off"
         onSubmit={handleSubmit}
@@ -83,6 +70,19 @@ const ProfileEdit = (props) => {
           />
         </div>
         <div className={styles.inputContainer}>
+          <label htmlFor="photo-upload" className={styles.label}>
+            Upload Photo
+          </label>
+        </div>
+        <div>
+          <input
+            type="file"
+            id="photo-upload"
+            name="photo"
+            onChange={handleChangePhoto}
+          />
+        </div>
+        <div className={styles.inputContainer}>
           <label htmlFor="password" className={styles.label}>Password</label>
         </div>
         <div>
@@ -110,23 +110,12 @@ const ProfileEdit = (props) => {
             onChange={handleChange}
           />
         </div>
-        <div className={styles.inputContainer}>
-          <label htmlFor="photo-upload" className={styles.label}>
-            Upload Photo
-          </label>
-          <input
-            type="file"
-            id="photo-upload"
-            name="photo"
-            onChange={handleChangePhoto}
-          />
-        </div>
         <div></div>
         <div className={styles.inputContainer}>
           <Link to="/">
-            <button>Cancel</button>
+            <button type="button">Cancel</button>
           </Link>
-          <button disabled={isFormInvalid()} className={styles.primaryButton}>
+          <button disabled={isFormInvalid()}type="submit" className={styles.primaryButton}>
             Update
           </button>
         </div>

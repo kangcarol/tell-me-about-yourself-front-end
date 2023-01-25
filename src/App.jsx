@@ -56,8 +56,10 @@ const App = () => {
     navigate(`/profiles/${user.profile}`)
   }
 
+
+  //! fix the remove favorite
   const handleRemoveFavorites = (removeCard) => {
-    setFavorites(favorites.splice(favorites.indexOf(removeCard),1,favorites))
+    setFavorites(favorites.splice(favorites.indexOf(removeCard),1))
     navigate(`/profiles/${user.profile}`)
   }
 

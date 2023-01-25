@@ -7,15 +7,6 @@ const Landing = ({ user }) => {
     <main className={styles.container}>
       <h1>Hello, {user ? user.name : 'Friend'}</h1>
       <img src={Logo} alt="logo" />
-
-      {/* {user ?  ''
-      :
-        <>
-          <Link to="/login">Log In</Link>
-          <Link to="/signup">Sign Up</Link>
-        </>
-      } */}
-
     </main>
   )
 }
