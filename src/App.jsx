@@ -57,16 +57,10 @@ const App = () => {
   }
 
 
-  //! fix the remove favorite
   const handleRemoveFavorites = (removeCard) => {
-    setFavorites(favorites.splice(favorites.indexOf(removeCard),1))
+    setFavorites(favorites.filter(c => c._id !== removeCard._id))
     navigate(`/profiles/${user.profile}`)
   }
-
-  // const handleChooseCategory = (category) => {
-  //   setCategoryCards(cards.filter(c => c._category === category))
-  //   navigate('/cards')
-  // }
 
   const handleAddCard = async (cardData) => {
     // cardData will have a shape of:
