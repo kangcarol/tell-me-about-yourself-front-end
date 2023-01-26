@@ -36,7 +36,6 @@ body {
   --fontcolor: white;
   --hover: rgb(247, 228, 79);
   --boxcolor:  rgb(228, 225, 225);
-
 }
 
 #root {
@@ -85,6 +84,7 @@ a {
 a:hover {
   color: var(--hover);
   font-weight: 600;
+  cursor: pointer;
 }
 
 a:focus {
