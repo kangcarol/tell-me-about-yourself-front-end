@@ -50,6 +50,7 @@ const ProfileDetails = (props) => {
         
         <article className={styles.container} >
         <h1 className={styles.container}>BOOKMARKS</h1>
+        <h4><Link to="/cards">Bookmark more cards</Link></h4>
           
           {props.favorites.map((card, idx) => (
             <div className={styles.card} key={idx}>

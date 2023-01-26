@@ -31,8 +31,13 @@
   padding: 2% 0;
 }
 
-section .container details[open]{
+/* section .container details[open]{
   background-color: var(--secondary);
+} */
+
+.container > section:hover {
+  background-color: var(--secondary);
+  cursor: pointer;
 }
 
 .container summary {
@@ -40,6 +45,7 @@ section .container details[open]{
   flex-direction: row;
   align-items: center;
   max-width: 100px;
+  padding: 10px;
 }
 
 
