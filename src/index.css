@@ -1,11 +1,7 @@
-
-/* * {
-  border: 1px red solid;
-} */
-
-html {
-  box-sizing: border-box
+* {
+  box-sizing: border-box;
 }
+
 
 /* The Universal Selector */
 *, /* All elements*/
@@ -44,6 +40,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 
 main {
@@ -51,7 +48,7 @@ main {
   flex-direction: column;
   justify-content: center;
   margin-top: 200px;
-  width: 80%;
+  width: 100%;
 }
 
 form {
@@ -144,3 +141,15 @@ label {
   margin: 0;
 }
 
+
+@media only screen and (max-width: 900px) {
+
+}
+
+@media only screen and (min-width: 1200px) {
+
+}
+
+@media only screen and (min-width: 1500px) {
+
+}

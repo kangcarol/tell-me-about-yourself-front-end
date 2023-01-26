@@ -2,6 +2,7 @@ article {
   display: flex;
   flex-direction: row;
   padding: 2% 0;
+  width: 500px;
 }
 
 .container > button {
@@ -35,10 +36,8 @@ article {
 .container h2 {
   margin: 0;
   font-size: 1rem;
-}
-
-.container > article > a {
-  /* width: 70%; */
+  flex-wrap: wrap;
+  max-width: 400px;
 }
 
 .container > article > h2 {
@@ -52,8 +51,26 @@ article {
   text-overflow: ellipsis;
   -webkit-box-orient: vertical;
   scroll-snap-align: start;
+  max-width: 500px;
 }
 
 .container > article > h2:hover {
   font-weight: 600;
+}
+
+@media only screen and (max-width: 900px) {
+  .container h2 {
+    margin: 0;
+    font-size: .8rem;
+    flex-wrap: wrap;
+    max-width: 200px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+
+}
+
+@media only screen and (min-width: 1500px) {
+
 }
