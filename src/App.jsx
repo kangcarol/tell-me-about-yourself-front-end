@@ -34,8 +34,7 @@ const App = () => {
   const [user, setUser] = useState(authService.getUser())
   const [cards,setCards] = useState([])
   const [profiles, setProfiles] = useState([])
-  const [favorites, setFavorites] = useState([])
-  // const [categoryCards, setCategoryCards] = useState([])
+  // const [favorites, setFavorites] = useState([])
 
   const navigate = useNavigate()
 
@@ -49,18 +48,17 @@ const App = () => {
     setUser(authService.getUser())
   }
 
-  const handleAddFavorites = (addedCard) => {
-    if (!favorites.includes(addedCard)) {
-      setFavorites([addedCard, ...favorites])
-    }
-    navigate(`/profiles/${user.profile}`)
-  }
+  // const handleAddFavorites = (addedCard) => {
+  //   if (!favorites.includes(addedCard)) {
+  //     setFavorites([addedCard, ...favorites])
+  //   }
+  //   navigate(`/profiles/${user.profile}`)
+  // }
 
-
-  const handleRemoveFavorites = (removeCard) => {
-    setFavorites(favorites.filter(c => c._id !== removeCard._id))
-    navigate(`/profiles/${user.profile}`)
-  }
+  // const handleRemoveFavorites = (removeCard) => {
+  //   setFavorites(favorites.filter(c => c._id !== removeCard._id))
+  //   navigate(`/profiles/${user.profile}`)
+  // }
 
   const handleAddCard = async (cardData) => {
     // cardData will have a shape of:
@@ -140,10 +138,9 @@ const App = () => {
             <ProtectedRoute user={user}>
               <CardList
               cards={cards}
-              favorites={favorites}
-              handleAddFavorites={handleAddFavorites}
-              handleRemoveFavorites={handleRemoveFavorites}
-              // handleChooseCategory={handleChooseCategory}
+              // favorites={favorites}
+              // handleAddFavorites={handleAddFavorites}
+              // handleRemoveFavorites={handleRemoveFavorites}
               />
             </ProtectedRoute>
           }
@@ -154,10 +151,9 @@ const App = () => {
             <ProtectedRoute user={user}>
               <CardsRandom
               cards={cards}
-              favorites={favorites}
-              handleAddFavorites={handleAddFavorites}
-              handleRemoveFavorites={handleRemoveFavorites}
-              // handleChooseCategory={handleChooseCategory}
+              // favorites={favorites}
+              // handleAddFavorites={handleAddFavorites}
+              // handleRemoveFavorites={handleRemoveFavorites}
               />
             </ProtectedRoute>
           }
@@ -167,8 +163,8 @@ const App = () => {
             <CardDetails
             user={user}
             handleDeleteCard={handleDeleteCard}
-            handleAddFavorites={handleAddFavorites}
-            handleRemoveFavorites={handleRemoveFavorites}
+            // handleAddFavorites={handleAddFavorites}
+            // handleRemoveFavorites={handleRemoveFavorites}
             />
           </ProtectedRoute>
         } />
@@ -203,9 +199,9 @@ const App = () => {
               <ProfileDetails 
               user={user}
               card={cards}
-              favorites={favorites}
-              handleAddFavorites={handleAddFavorites}
-              handleRemoveFavorites={handleRemoveFavorites}
+              // favorites={favorites}
+              // handleAddFavorites={handleAddFavorites}
+              // handleRemoveFavorites={handleRemoveFavorites}
               />
             </ProtectedRoute>
           }

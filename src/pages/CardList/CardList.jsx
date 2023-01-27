@@ -5,7 +5,7 @@ import Icon from '../../components/Icon/Icon.jsx'
 const CardList = (props) => {
   console.log("cardlist props:" , props)
 
-  const categoryArr = ['Behavioral', 'Frontend', 'Backend','Javascript', 'Python', 'CS','Other']
+  const categoryArr = ['Behavioral', 'Frontend', 'Backend','CS','Other']
 
   return (
     <main className={styles.container}>
@@ -19,7 +19,10 @@ const CardList = (props) => {
             </summary>
             {props.cards.map((card) => (
               (card.category === c) ?
-              <Card card={card} handleAddFavorites={props.handleAddFavorites} handleRemoveFavorites={props.handleRemoveFavorites}key={card._id} />
+              <Card card={card} 
+              // handleAddFavorites={props.handleAddFavorites} 
+              // handleRemoveFavorites={props.handleRemoveFavorites}
+              key={card._id} />
               :
               ''
             ))}

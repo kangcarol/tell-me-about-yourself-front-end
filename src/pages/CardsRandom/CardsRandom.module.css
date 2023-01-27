@@ -1,5 +1,5 @@
 main {
-  width: 65%;
+  /* width: 65%; */
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -41,7 +41,7 @@ main {
 }
 
 .container h1 {
-  color: black;
+  color: red;
   font-size: 1em;
   font-weight: 500;
   width: fit-content;
