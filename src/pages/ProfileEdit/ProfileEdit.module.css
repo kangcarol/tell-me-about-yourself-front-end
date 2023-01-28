@@ -2,6 +2,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: flex-start;
+  height: 80vh;
 }
 
 .container h1 {
@@ -11,7 +13,7 @@
 .container form{
   display: grid;
   grid-column-start: 1;
-  grid-template-rows: repeat(7, 5vmin);
+  grid-auto-rows: max-content;
   grid-template-columns: 50% 50%;
   grid-gap: 3%;
   justify-items: start;
@@ -47,6 +49,7 @@ div > input, textarea {
   min-height: 22px;
   color: var(--primary);
   font-family: 'Poppins', sans-serif;
+  max-width: 95%;
 }
 
 .label {

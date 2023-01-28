@@ -6,7 +6,7 @@ import Icon from "../Icon/Icon.jsx"
 // import AuthorInfo from "../AuthorInfo/AuthorInfo"
 
 const Card = (props) => {
-  const location = useLocation()
+  // const location = useLocation()
   return (
     <>
       {/* <div  className={styles.icon}> */}
@@ -28,7 +28,7 @@ const Card = (props) => {
           } */}
 
           <Link to={`/cards/${props.card._id}`} className={styles.container}>
-              <h2 className={styles.container}>{props.card.text.toUpperCase()}</h2>
+              {props.card.text.toUpperCase()}
           </Link>
 
         </article>

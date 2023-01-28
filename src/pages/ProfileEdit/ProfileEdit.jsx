@@ -47,7 +47,7 @@ const ProfileEdit = (props) => {
           <label htmlFor="about" className={styles.label}>About</label>
         </div>
         <div>
-          <input
+          <textarea
             type="text"
             autoComplete="off"
             id="about"
