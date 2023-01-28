@@ -2,7 +2,6 @@
   box-sizing: border-box;
 }
 
-
 /* The Universal Selector */
 *, /* All elements*/
 *::before, /* All ::before pseudo-elements */
@@ -11,7 +10,6 @@
      but can be over-ridden as needed */
   box-sizing: inherit;
 }
-
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
@@ -30,11 +28,10 @@ body {
   --fontcolor: white;
   --hover: rgb(247, 228, 79);
   --boxcolor:  rgb(228, 225, 225);
+  width: 100%;
 }
 
 #root {
-  /* height: 100%; */
-  /* width: 100%; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -45,7 +42,9 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-top: 200px;
+  align-items: center;
+  height: 50vh;
+
 }
 
 form {
@@ -123,7 +122,7 @@ select {
   margin: 0;
   padding: 5px;
   color:gray;
-  height: 32px;
+  height: 22px;
   border-radius: 5px;
   border: none;
 }
@@ -139,14 +138,15 @@ label {
 }
 
 
-@media only screen and (max-width: 900px) {
+
+@media only screen and (max-width: 780px) {
+  /* width: 300px; */
+}
+
+@media only screen and (max-width: 1200px) {
 
 }
 
-@media only screen and (min-width: 1200px) {
-
-}
-
-@media only screen and (min-width: 1500px) {
+@media only screen and (max-width: 1500px) {
 
 }

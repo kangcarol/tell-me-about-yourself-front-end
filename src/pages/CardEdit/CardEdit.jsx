@@ -78,9 +78,8 @@ const CardEdit = (props) => {
           value={form.source}
           placeholder="Let's give credit where credit is due!"
           onChange={handleChange}
-        />
-        <label htmlFor="category-input">Category</label>
-        <button type="submit" className={styles.primaryButton}> Submit</button>
+        />      
+        <button type="submit" className={styles.primaryButton}>Submit</button>
       </form>
     </main>
   )

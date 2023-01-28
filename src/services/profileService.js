@@ -27,7 +27,7 @@ const show = async (id) => {
     })
     return res.json()
   } catch (error) {
-    console.ird(error)
+    console.log(error)
   }
 }
 
@@ -43,7 +43,7 @@ const update = async (id,profileData, photo) => {
       body: JSON.stringify(profileData)
     })
     const json = await res.json()
-    if (json.err){
+    if (json.err){  
       throw new Error(json.err)
     } else if (photo) {
       const photoData = new FormData()

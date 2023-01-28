@@ -53,3 +53,16 @@ div > input, textarea {
   margin: 5% 0;
 }
 
+
+
+@media only screen and (max-width: 780px) {
+  /* width: 300px; */
+}
+
+@media only screen and (max-width: 1200px) {
+
+}
+
+@media only screen and (max-width: 1500px) {
+
+}

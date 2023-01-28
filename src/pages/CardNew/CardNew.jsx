@@ -31,14 +31,14 @@ const CardNew = (props) => {
         >
           <option value="">Select a Category</option>
           <option value="Behavioral">Behavioral</option>
-          <option value="Computer Science">Computer Science</option>
-          <option value="Javascript">Javascript</option>
-          <option value="Python">Python</option>
-          <option value="Frontend">Front End</option>
+          {/* <option value="Javascript">Javascript</option>
+          <option value="Python">Python</option> */}
+          <option value="Frontend">Frontend</option>
           {/* <option value="React">React</x  option> */}
           {/* <option value="Styling">Styling</option> */}
-          <option value="Backend">Back End</option>
+          <option value="Backend">Backend</option>
           {/* <option value="Databases">Databases</option> */}
+          <option value="Computer Science">Computer Science</option>
           <option value="Other">Other</option>
         </select>
         <label htmlFor="text-input">Question</label>

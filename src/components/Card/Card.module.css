@@ -2,7 +2,7 @@ article {
   display: flex;
   flex-direction: row;
   padding: 2% 0;
-  width: 500px;
+  width: 300px;
 }
 
 .container > button {
@@ -37,7 +37,7 @@ article {
   margin: 0;
   font-size: 1rem;
   flex-wrap: wrap;
-  max-width: 400px;
+  max-width: 300px;
 }
 
 
@@ -63,7 +63,7 @@ article {
   font-weight: 600;
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 780px) {
   .container h2 {
     margin: 0;
     font-size: .8rem;
@@ -72,10 +72,10 @@ article {
   }
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (max-width: 1200px) {
 
 }
 
-@media only screen and (min-width: 1500px) {
+@media only screen and (max-width: 1500px) {
 
 }

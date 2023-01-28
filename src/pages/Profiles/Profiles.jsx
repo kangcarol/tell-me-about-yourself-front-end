@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react'
+import { Link } from "react-router-dom"
 import * as profileService from '../../services/profileService'
 import styles from './Profiles.module.css'
 import ProfileIcon from '../../assets/icons/profile.png'
@@ -35,6 +36,7 @@ const Profiles = () => {
                 <a href={profile.linkedin} rel= "noreferrer" target="_blank">LinkedIn</a>
                 :
                 ''}
+                <Link to={`/profiles/${profile._id}/edit`} state={profile}>Edit</Link>
               </span>
               </div>
               <div>

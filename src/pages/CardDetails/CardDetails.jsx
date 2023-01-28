@@ -26,8 +26,8 @@ const CardDetails = (props) => {
 
   return (
     <main className={styles.container}>
-        <h1 className={styles.container}>{card.category.toUpperCase()}</h1>
       <article>
+        <h1 className={styles.container}>{card.category.toUpperCase()}</h1>
         <section>
           <h2>{card.text}</h2>
           <details>

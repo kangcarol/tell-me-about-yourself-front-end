@@ -4,9 +4,21 @@
   flex-direction: column;
   justify-content: flex-start;
   color: var(--primary);
+
 }
 
 .container h1 {
   padding: 0;
 }
 
+@media only screen and (max-width: 780px) {
+  /* width: 300px; */
+}
+
+@media only screen and (max-width: 1200px) {
+
+}
+
+@media only screen and (max-width: 1500px) {
+
+}

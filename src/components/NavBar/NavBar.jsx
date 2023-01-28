@@ -20,7 +20,7 @@ const NavBar = ({ user, handleLogout }) => {
       <li><Link to="/cardsrandom">TEST</Link></li>
       <li><Link to="/cards">ALL CARDS</Link></li>
       <li><Link to="/cards/new">CREATE A CARD</Link></li>
-      <li><Link to="/profiles">PROFILES</Link></li>
+      <li><Link to="/profiles">CONTRIBUTORS</Link></li>
       <li><Link to="/about">ABOUT</Link></li>
       <li><Link to="/" onClick={handleLogout}>LOG OUT</Link></li>
     </ul>
@@ -30,7 +30,8 @@ const NavBar = ({ user, handleLogout }) => {
   
     <header className={styles.container}>
       <nav>
-      {(location.pathname !==  '/' || location.pathname ===  '/login' || location.pathname ===  '/signup') ? <Link to="/"><img src={Logo} alt="logo"/></Link> : <span>''</span>}
+      {/* {(location.pathname !==  '/' || location.pathname ===  '/login' || location.pathname ===  '/signup') ? <Link to="/"><img src={Logo} alt="logo"/></Link> : <span>''</span>} */}
+        <Link to="/"><img src={Logo} alt="logo"/></Link>
         {user ? protectedLinks : publicLinks}
       </nav>
     </header>

@@ -1,5 +1,5 @@
 .container {
-  width: 50%;
+  width: 100%;
   display: grid;
   grid-column-start: 1;
   grid-template-rows: repeat(3, 5vmin);
