@@ -1,22 +1,40 @@
 .container {
   display: flex;
   align-items: center;
+  justify-content: center;
   flex-direction: column;
-  /* height: 100%; */
-}
-
-.container > img {
-  width: 50%;
-  padding: 3% 0 0 0;
+  height: 100%;
+  width: 100%;
 }
 
 .container > h1 {
   color: var(--secondary);
 }
 
+.container > section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  height: 100%;
+}
+
+.container > section > a {
+  color: var(--primary);
+  background-color: white;
+  font-size: 1.25rem;
+  width: fit-content;
+  margin: 20% 10% 5% 10%;
+  padding: 5%;
+  width: 500PX;
+}
+
 
 @media only screen and (max-width: 780px) {
-
+  .container p {
+    padding: 10%;
+  }
 }
 
 @media only screen and (max-width: 1200px) {

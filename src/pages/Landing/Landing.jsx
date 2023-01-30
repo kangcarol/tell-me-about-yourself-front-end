@@ -1,5 +1,6 @@
 import styles from './Landing.module.css'
 import { useState } from "react"
+import { Link, useLocation } from 'react-router-dom'
 import Logo from '../../assets/branding/logo.svg'
 
 const Landing = ({ user, cards }) => {
@@ -12,18 +13,14 @@ const Landing = ({ user, cards }) => {
     setRandomNumber(randomNumber)
   }
   console.log("RANDOM NUMBER", randomNumber)
-  console.log("CARDS LENGTH", cards.length)
+  console.log("RANDOM CARD ID", cards[randomNumber])
 
   return (
     <main className={styles.container}>
       <h1>Hello, {user ? user.name : 'Friend'}</h1>
       <section>
-        <details>
-            <summary onClick={generateRandomNumber}>
-              <h1>Pick a Card</h1>
-            </summary>
-            {/* {cards[randomNumber].text} */}
-        </details>
+        <button onClick={generateRandomNumber}>Pick a Card</button>
+        <Link to={`/cards/${cards[randomNumber]._id}`}>{cards[randomNumber] && cards[randomNumber].text}</Link>
       </section>
     </main>
   )

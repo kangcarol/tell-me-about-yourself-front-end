@@ -13,7 +13,6 @@ import ProfileEdit from './pages/ProfileEdit/ProfileEdit'
 import ChangePassword from './pages/ChangePassword/ChangePassword'
 
 import CardList from './pages/CardList/CardList'
-import CardsRandom from './pages/CardsRandom/CardsRandom'
 import CardNew from './pages/CardNew/CardNew'
 import CardDetails from './pages/CardDetails/CardDetails'
 import CardEdit from './pages/CardEdit/CardEdit'
@@ -148,19 +147,6 @@ const App = () => {
             </ProtectedRoute>
           }
         />
-        <Route
-          path="/cardsrandom"
-          element={
-            <ProtectedRoute user={user}>
-              <CardsRandom
-              cards={cards}
-              // favorites={favorites}
-              // handleAddFavorites={handleAddFavorites}
-              // handleRemoveFavorites={handleRemoveFavorites}
-              />
-            </ProtectedRoute>
-          }
-        />
         <Route path="/cards/:id" element={
           <ProtectedRoute user={user}>
             <CardDetails
@@ -171,7 +157,6 @@ const App = () => {
             />
           </ProtectedRoute>
         } />
-
         <Route 
           path="/cards/new"
           element={

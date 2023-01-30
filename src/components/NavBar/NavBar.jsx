@@ -17,9 +17,8 @@ const NavBar = ({ user, handleLogout }) => {
   const protectedLinks = (
     <ul>
       {/* <li><Link to={`/profiles/${user?.profile}`}>Welcome, {user ? user.name.toUpperCase() : 'Friend'}</Link></li> */}
-      <li><Link to="/cardsrandom">TEST</Link></li>
-      <li><Link to="/cards">ALL CARDS</Link></li>
       <li><Link to="/cards/new">CREATE A CARD</Link></li>
+      <li><Link to="/cards">ALL CARDS</Link></li>
       <li><Link to="/profiles">CONTRIBUTORS</Link></li>
       <li><Link to="/about">ABOUT</Link></li>
       <li><Link to="/" onClick={handleLogout}>LOG OUT</Link></li>
