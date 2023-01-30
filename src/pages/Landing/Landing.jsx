@@ -13,17 +13,21 @@ const Landing = ({ user, cards }) => {
     setRandomNumber(randomNumber)
   }
   console.log("RANDOM NUMBER", randomNumber)
-  console.log("RANDOM CARD ID", cards[randomNumber])
+  console.log("RANDOM CARD", cards[randomNumber])
 
   return (
     <main className={styles.container}>
       <h1>Hello, {user ? user.name : 'Friend'}</h1>
       <section>
+        <Link>{cards[randomNumber] && cards[randomNumber].text}</Link>
         <button onClick={generateRandomNumber}>Pick a Card</button>
-        <Link to={`/cards/${cards[randomNumber]._id}`}>{cards[randomNumber] && cards[randomNumber].text}</Link>
       </section>
     </main>
   )
 }
 
 export default Landing
+
+
+// to={`/cards/${cards[randomNumber]._id}`} // this is the line that is causing the error
+

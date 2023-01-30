@@ -1,5 +1,5 @@
 import { useState, useEffect} from "react"
-import { useParams, Link } from "react-router-dom"
+import { useParams, Link, useNavigate} from "react-router-dom"
 
 // components
 import Loading from "../Loading/Loading"
@@ -12,6 +12,7 @@ import * as cardService from "../../services/cardService"
 
 const CardDetails = (props) => {
   const { id } = useParams()
+  const navigate = useNavigate()
   const [card, setCard] = useState(null)
 
   useEffect(() => {
@@ -50,6 +51,7 @@ const CardDetails = (props) => {
           </span>
         </section>
       </article>
+      <button onClick={() => navigate('/')}>Pick a Card</button>
     </main>
   )
 }

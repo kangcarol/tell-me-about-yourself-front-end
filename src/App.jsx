@@ -33,6 +33,12 @@ const App = () => {
   const [user, setUser] = useState(authService.getUser())
   const [cards,setCards] = useState([])
   const [profiles, setProfiles] = useState([])
+  // const [randomNumber, setRandomNumber] = useState(0)
+
+  // const generateRandomNumber = () => {
+  //   const randomNumber = Math.floor(Math.random() * cards.length)
+  //   setRandomNumber(randomNumber)
+  // }
   // const [favorites, setFavorites] = useState([])
 
   const navigate = useNavigate()
@@ -118,8 +124,11 @@ const App = () => {
         <Route
           path="/"
           element={
-          <Landing user={user}
+          <Landing
+          user={user}
           cards={cards}
+          // generateRandomNumber={generateRandomNumber}
+          // randomNumber={randomNumber}
           />}
         />
         <Route
