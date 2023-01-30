@@ -84,7 +84,20 @@
 }
 
 @media only screen and (max-width: 780px) {
-  /* width: 300px; */
+  .container > article {
+    width: 320px;
+  }
+
+  .container h1 {
+    width: 320px;
+  }
+
+  .container span {
+    flex-direction: column;
+  }
+  .container span > span {
+    flex-direction: row;
+  }
 }
 
 @media only screen and (max-width: 1200px) {

@@ -23,12 +23,9 @@
 }
 
 .container a {
-  width: 50px;
-}
-
-.container h2 {
-  width: 425px;
-  margin: 0 20px;
+  width: 95%;
+  margin: 20px 5px;
+  font-size: 1em;
 }
 
 .container div {
@@ -37,10 +34,6 @@
   align-items: center;
   padding: 2% 0;
 }
-
-/* section .container details[open]{
-  background-color: var(--secondary);
-} */
 
 .container > section:hover {
   background-color: var(--secondary);
@@ -71,12 +64,15 @@
   /* width: 100%; */
 }
 
-.container > details {
+.container > section > details {
   padding: 3%;
   margin: 0 0 0 2%;
   width: 100%;
   /* width: 300px; */
-
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
 }
 
 

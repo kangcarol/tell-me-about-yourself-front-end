@@ -1,13 +1,13 @@
-.container > article {
+/* .container > article {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   align-items: flex-start;
   padding: 2% 0;
   width: 80%;
-}
+} */
 
-.container > button {
+/* .container > button {
   border-radius: 5px;
   border: none;
   background: none;
@@ -33,17 +33,16 @@
   -webkit-box-shadow: 0 0 5px 2px var(--hover);
   -moz-box-shadow: 0 0 5px 2px var(--hover);
   box-shadow: 0 0 5px 2px var(--hover);
-}
+} */
 
 .container > a {
   width: 80%;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: 5%;
-  font-size: 1rem;
+  /* margin: 5%; */
+  font-size: .9rem;
   flex-wrap: wrap;
-  width: 90%;
 }
 
 /* .container > a > h2 {
@@ -54,12 +53,12 @@
 
 } */
 
+/* 
+.container a:hover {
+  color: red;
+} */
 
-.container h2:hover {
-  color: rgb(43, 40, 218);
-}
-
-.container > article > a > h2 {
+/* .container > article > a > h2 {
   font-size: 15px;
   font-weight: 300;
   margin: 0;
@@ -72,9 +71,9 @@
   scroll-snap-align: start;
   max-width: 500px;
   
-}
+} */
 
-.container > article > h2:hover {
+.container > article > a:hover {
   font-weight: 600;
 }
 

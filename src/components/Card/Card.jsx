@@ -13,7 +13,7 @@ const Card = (props) => {
         {/* <Icon category={props.card.category} /> */}
         {/* <h2>{props.card.category}</h2> */}
       {/* </div> */}
-        <article className={styles.container}>
+        {/* <article className={styles.container}> */}
           
           {/* {(location.pathname ==='/cards') || (location.pathname !=='/cards' && props.favorites===false) ?
 
@@ -31,7 +31,7 @@ const Card = (props) => {
               {props.card.text.toUpperCase()}
           </Link>
 
-        </article>
+        {/* </article> */}
     </>
   )
 }

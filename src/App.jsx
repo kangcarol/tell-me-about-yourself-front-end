@@ -118,7 +118,10 @@ const App = () => {
 
         <Route
           path="/"
-          element={<Landing user={user} />}
+          element={
+          <Landing user={user}
+          cards={cards}
+          />}
         />
         <Route
           path="/about"
