@@ -35,7 +35,7 @@ const Profiles = () => {
                 {(profile.linkedin) ?
                 <a href={profile.linkedin} rel= "noreferrer" target="_blank">LinkedIn</a>
                 :
-                ''}
+                null}
               </span>
                 <Link to={`/profiles/${profile._id}/edit`} state={profile}>Edit</Link>
               </div>
