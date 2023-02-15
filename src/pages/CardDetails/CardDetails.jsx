@@ -51,7 +51,7 @@ const CardDetails = (props) => {
           </span>
         </section>
       </article>
-      <button onClick={() => navigate('/')}>Pick a Card</button>
+      {/* <button onClick={() => navigate('/')}>Pick a Card</button> */}
     </main>
   )
 }

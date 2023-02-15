@@ -23,10 +23,16 @@
 }
 
 .container a {
-  width: 95%;
+  width: 90%;
   margin: 20px 5px;
   font-size: 1em;
   padding: 0 5%;
+  color: rgb(14, 0, 66);
+}
+
+.container a:hover {
+  color: var(--primary);
+  font-weight: 700;
 }
 
 .container div {
