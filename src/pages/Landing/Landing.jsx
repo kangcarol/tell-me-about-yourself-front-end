@@ -31,7 +31,7 @@ const Landing = ({ user, cards }) => {
           :
           null
         ))} */}
-        <button onClick={generateRandomNumber}>Pick a Card</button>
+        {user ? <button onClick={generateRandomNumber} className={styles.primaryButton}>Pick a Card</button>: <h1>Let's get started, please login or sign up!</h1>}
       </section>
     </main>
   )

@@ -52,13 +52,13 @@ const ProfileDetails = (props) => {
         <h1 className={styles.container}>BOOKMARKS</h1>
         <h4><Link to="/cards">Bookmark more cards</Link></h4>
           
-          {props.favorites.map((card, idx) => (
+          {/* {props.favorites.map((card, idx) => (
             <div className={styles.card} key={idx}>
               <h4>{card.category.toUpperCase()}</h4>
               <Card favortites={true} card={card} handleAddFavorites={props.handleAddFavorites} handleRemoveFavorites={props.handleRemoveFavorites}key={card._id} />
             </div>
             
-          ))}
+          ))} */}
 
       </article>  
     </main>

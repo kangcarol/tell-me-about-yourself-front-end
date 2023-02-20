@@ -14,9 +14,10 @@
   display: grid;
   grid-column-start: 1;
   grid-auto-rows: max-content;
-  grid-template-columns: 50% 50%;
+  grid-template-columns: 45% 55%;
   grid-gap: 3%;
   justify-items: start;
+  height: 380px;
 }
 
 .label,

@@ -82,6 +82,14 @@
   font-weight: 500;
 }
 
+/* .container .homeLink {
+  color: var(--primary);
+  font-size: .8em;
+  text-align: center;
+  text-decoration: underline;
+  margin: 5px;
+} */
+
 @media only screen and (max-width: 780px) {
   .container > article {
     width: 320px;

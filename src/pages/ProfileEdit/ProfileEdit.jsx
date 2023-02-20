@@ -24,12 +24,18 @@ const ProfileEdit = (props) => {
   const handleSubmit =  async (e) => {
     e.preventDefault()
     try {
-      await profileService.update( props.profile, form, photoData.photo)
-      navigate(`/profiles/${props.user.profile}`)
+      await profileService.update(props.profile, form, photoData.photo)
+      navigate(`/profiles`)
     } catch (err) {
       console.log(err.message)
     }
   }
+
+  // const handleSubmit = (e) => {
+  //   e.preventDefault()
+  //   props.handleUpdateProfile(form)
+  // }
+
 
   const isFormInvalid = () => {
     return !(form.name && form.password && form.password === form.passwordConf)

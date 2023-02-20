@@ -16,18 +16,30 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: fit-content;
+  width: 500px;
   height: 100%;
 }
 
 .container > section > a {
   color: var(--primary);
   background-color: white;
+  border-radius: 10px;
   font-size: 1.25rem;
-  width: fit-content;
+  width: 500px;
   margin: 20% 10% 5% 10%;
   padding: 5%;
   width: 500PX;
+}
+
+.container > section > a:hover {
+  font-weight: 800;
+}
+
+.primaryButton {
+  background-color: var(--primary);
+  color: white;
+  width: 80px;
+  font-weight: 500;
 }
 
 

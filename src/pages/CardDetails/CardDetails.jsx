@@ -44,6 +44,7 @@ const CardDetails = (props) => {
             <AuthorInfo content={card} />
             {card.author._id === props.user.profile && 
               <span>
+                {/* <Link className={styles.homeLink} to={`/`} state={card}>Back</Link> */}
                 <button onClick={() => props.handleDeleteCard(id)}>Delete</button>
                 <button className={styles.primaryButton}><Link to={`/cards/${id}/edit`} state={card}>Edit</Link></button>
               </span>
