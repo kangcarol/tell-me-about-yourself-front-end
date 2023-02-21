@@ -1,6 +1,6 @@
 import styles from './Landing.module.css'
 import { useState } from "react"
-import { Link, useLocation } from 'react-router-dom'
+import { useLocation } from 'react-router-dom'
 import Logo from '../../assets/branding/logo.svg'
 import Card from '../../components/Card/Card'
 
@@ -21,8 +21,10 @@ const Landing = ({ user, cards }) => {
       <h1>Hello, {user ? user.name : 'Friend'}</h1>
       <section>
 
-      {cards.filter(card => card._id === cards[randomNumber]._id).map((card) => (<Card card={card} 
-          key={card._id} /> ))}
+      {user ?
+      cards.filter(card => card._id === cards[randomNumber]._id).map((card) => (<Card card={card} 
+          key={card._id} /> ))
+        : null }
 
       {/* {cards.map((card) => (
         (card.id === cards[randomNumber].id) ?
@@ -31,7 +33,11 @@ const Landing = ({ user, cards }) => {
           :
           null
         ))} */}
-        {user ? <button onClick={generateRandomNumber} className={styles.primaryButton}>Pick a Card</button>: <h1>Let's get started, please login or sign up!</h1>}
+        {user ? <button onClick={generateRandomNumber} className={styles.primaryButton}>Pick a Card</button>: 
+        <>
+          <img src={Logo} alt="logo"/>
+          <h1>Let's get started, please login or sign up!</h1>
+        </>}
       </section>
     </main>
   )

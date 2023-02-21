@@ -13,7 +13,7 @@ header{
 .container nav {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-end;
   padding: .5% 3%;
   width: 100%
 }

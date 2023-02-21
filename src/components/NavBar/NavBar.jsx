@@ -28,9 +28,10 @@ const NavBar = ({ user, handleLogout }) => {
   return (
   
     <header className={styles.container}>
+      {(location.pathname !==  '/' || location.pathname ===  '/login' || location.pathname ===  '/signup') ||(location.pathname ===  '/') && (user) ? <Link to="/"><img src={Logo} alt="logo"/></Link> : null}
       <nav>
-      {/* {(location.pathname !==  '/' || location.pathname ===  '/login' || location.pathname ===  '/signup') ? <Link to="/"><img src={Logo} alt="logo"/></Link> : <span>''</span>} */}
-        <Link to="/"><img src={Logo} alt="logo"/></Link>
+
+        
         {user ? protectedLinks : publicLinks}
       </nav>
     </header>

@@ -20,6 +20,11 @@
   height: 100%;
 }
 
+.container > section > img {
+  width: 60%;
+  height: 60%;
+}
+
 .container > section > a {
   color: var(--primary);
   background-color: white;
