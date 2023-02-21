@@ -7,8 +7,8 @@
   width: 100%;
 }
 
-.container > h1 {
-  color: var(--secondary);
+.container h1:last-child {
+  color: var(--primary);
 }
 
 .container > section {
@@ -23,6 +23,7 @@
 .container > section > img {
   width: 60%;
   height: 60%;
+  padding: 5%;
 }
 
 .container > section > a {

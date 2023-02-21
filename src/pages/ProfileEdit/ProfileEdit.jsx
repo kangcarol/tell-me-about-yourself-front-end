@@ -24,7 +24,7 @@ const ProfileEdit = (props) => {
   const handleSubmit =  async (e) => {
     e.preventDefault()
     try {
-      await profileService.update(props.profile, form, photoData.photo)
+      await profileService.update(props.profile, form, form.photo)
       navigate(`/profiles`)
     } catch (err) {
       console.log(err.message)

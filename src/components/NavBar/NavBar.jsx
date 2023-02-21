@@ -28,7 +28,7 @@ const NavBar = ({ user, handleLogout }) => {
   return (
   
     <header className={styles.container}>
-      {(location.pathname !==  '/' || location.pathname ===  '/login' || location.pathname ===  '/signup') ||(location.pathname ===  '/') && (user) ? <Link to="/"><img src={Logo} alt="logo"/></Link> : null}
+      {(location.pathname !==  '/' || location.pathname ===  '/login' || location.pathname ===  '/signup') ||(location.pathname ===  '/' && (user)) ? <Link to="/"><img src={Logo} alt="logo"/></Link> : null}
       <nav>
 
         

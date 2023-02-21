@@ -1,12 +1,11 @@
 import styles from './Landing.module.css'
 import { useState } from "react"
-import { useLocation } from 'react-router-dom'
+// import { useLocation } from 'react-router-dom'
 import Logo from '../../assets/branding/logo.svg'
 import Card from '../../components/Card/Card'
 
 const Landing = ({ user, cards }) => {
 
-  // const categoryArr = ['Behavioral', 'Frontend', 'Backend', 'CS','Other']
   const [randomNumber, setRandomNumber] = useState(0)
 
   const generateRandomNumber = () => {
@@ -22,21 +21,16 @@ const Landing = ({ user, cards }) => {
       <section>
 
       {user ?
-      cards.filter(card => card._id === cards[randomNumber]._id).map((card) => (<Card card={card} 
+        cards.filter(card => card._id === cards[randomNumber]._id).map((card) => (<Card card={card} 
           key={card._id} /> ))
         : null }
 
-      {/* {cards.map((card) => (
-        (card.id === cards[randomNumber].id) ?
-          <Card card={card} 
-          key={card._id} />
-          :
-          null
-        ))} */}
-        {user ? <button onClick={generateRandomNumber} className={styles.primaryButton}>Pick a Card</button>: 
+      {user ? 
+        <button onClick={generateRandomNumber} className={styles.primaryButton}>Pick a Card</button>
+        : 
         <>
-          <img src={Logo} alt="logo"/>
-          <h1>Let's get started, please login or sign up!</h1>
+          <img className={styles.container} src={Logo} alt="logo"/>
+          <h1 className={styles.container}>Let's get started, please login or sign up!</h1>
         </>}
       </section>
     </main>
